@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+
+    &:hover {
+        text-decoration: line-through;
+        color: $foreground;
+    }
+
+    &.inverted {
+        color: $foreground;
+        &:hover { color: $primary; }
+    }
+}
+
+.faded { opacity:0.2; }

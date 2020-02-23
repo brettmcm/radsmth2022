@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #00ff9d;
+}
+a:hover {
+  text-decoration: line-through;
+  color: black;
+}
+a.inverted {
+  color: black;
+}
+a.inverted:hover {
+  color: #00ff9d;
+}
+
+.faded {
+  opacity: 0.2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 5vw;
+}
+body.boxes {
+  border: 1px solid #333;
+}
+body.boxes * {
+  border: 1px solid #333;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 100%;
+  font-size: 1.7em;
+}
+nav .name {
+  margin-right: auto;
+}
+nav a:not(:last-child):not(:first-child) {
+  margin-right: 1em;
+}
+
+/*# sourceMappingURL=app.css.map */
