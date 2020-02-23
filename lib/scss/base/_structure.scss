@@ -1,3 +1,7 @@
+html, body {
+    min-height: calc(100vh - 10vw);    
+}
+
 body {
     display: flex;
     flex-direction: column;

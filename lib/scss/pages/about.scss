@@ -1,0 +1,10 @@
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5vw 0 0 0;
+
+    img { width: 25%; }
+    .copy { width: 70%; }
+}

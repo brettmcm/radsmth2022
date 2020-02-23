@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
 
-* {
+html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1440 - 400) );
 }
 
 h1, h2, h3, h4, h5 {

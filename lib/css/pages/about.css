@@ -1,0 +1,14 @@
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw 0 0 0;
+}
+.layout img {
+  width: 25%;
+}
+.layout .copy {
+  width: 70%;
+}
+
+/*# sourceMappingURL=about.css.map */

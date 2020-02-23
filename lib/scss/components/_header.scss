@@ -3,7 +3,10 @@ nav {
     justify-content: flex-end;
     align-items: stretch;
     width: 100%;
-    font-size:1.7em;
     .name { margin-right: auto; }
     a:not(:last-child):not(:first-child) { margin-right: 1em; }
+    a.active {
+        color: $primary;
+        text-decoration: line-through;
+    }
 }

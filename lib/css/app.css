@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap");
-* {
+html {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
+  font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1440 - 400) );
 }
 
 h1, h2, h3, h4, h5 {
@@ -28,6 +29,10 @@ a.inverted:hover {
   opacity: 0.2;
 }
 
+html, body {
+  min-height: calc(100vh - 10vw);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -47,13 +52,16 @@ nav {
   justify-content: flex-end;
   align-items: stretch;
   width: 100%;
-  font-size: 1.7em;
 }
 nav .name {
   margin-right: auto;
 }
 nav a:not(:last-child):not(:first-child) {
   margin-right: 1em;
+}
+nav a.active {
+  color: #00ff9d;
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=app.css.map */
