@@ -1,0 +1,26 @@
+@import '../base/color';
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    .work-card {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        background-size: cover;
+        svg {
+            path { fill: $foreground; }
+        }
+        &:hover {
+            &.rally { background-image:url('../../img/work/rally.jpg'); }
+            &.dusty-times { background-image:url('../../img/work/dusty-times.jpg'); }
+            &.mosaic { background-image:url('../../img/work/mosaic.jpg'); }
+            svg {
+                path { fill: unset; }
+            }
+        }
+    }
+
+}

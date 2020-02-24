@@ -1,0 +1,29 @@
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.grid .work-card {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+}
+.grid .work-card svg path {
+  fill: black;
+}
+.grid .work-card:hover.rally {
+  background-image: url("../../img/work/rally.jpg");
+}
+.grid .work-card:hover.dusty-times {
+  background-image: url("../../img/work/dusty-times.jpg");
+}
+.grid .work-card:hover.mosaic {
+  background-image: url("../../img/work/mosaic.jpg");
+}
+.grid .work-card:hover svg path {
+  fill: unset;
+}
+
+/*# sourceMappingURL=work.css.map */

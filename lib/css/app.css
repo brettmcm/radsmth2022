@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+h1.page-title {
+  margin-top: 5vw;
+}
+
 a {
   text-decoration: none;
   color: #00ff9d;
@@ -24,6 +28,9 @@ a.inverted {
 a.inverted:hover {
   color: #00ff9d;
 }
+a.underline {
+  text-decoration: underline;
+}
 
 .faded {
   opacity: 0.2;
@@ -37,7 +44,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
   padding: 5vw;
 }
 body.boxes {
@@ -45,6 +51,17 @@ body.boxes {
 }
 body.boxes * {
   border: 1px solid #333;
+}
+
+section {
+  display: block;
+  padding: 5vw 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1px;
 }
 
 nav {

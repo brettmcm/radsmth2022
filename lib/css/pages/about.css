@@ -6,9 +6,21 @@
 }
 .layout img {
   width: 25%;
+  border-radius: 1px;
 }
 .layout .copy {
   width: 70%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.cards div {
+  width: 33%;
+  border: 1px solid black;
+  border-radius: 1px;
 }
 
 /*# sourceMappingURL=about.css.map */
