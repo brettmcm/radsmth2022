@@ -17,6 +17,7 @@
             <svg
                 data-project="Rally - Consumer Product"
                 data-url="https://www.behance.net/gallery/92311931/Rally-Branding"
+                data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
@@ -48,6 +49,7 @@
             <svg
                 data-project="Mosaic - Restaurant"
                 data-url="https://www.behance.net/gallery/92308619/Mosaic-Restaurant-Branding"
+                data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
@@ -128,6 +130,7 @@
             <svg
                 data-project="The Beer House - Bar"
                 project-url="https://www.behance.net/gallery/92311293/The-Beer-House-Branding"
+                data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
@@ -1754,6 +1757,7 @@
             <svg
                 data-project="Dusty Times - Magazine"
                 data-url="https://www.behance.net/gallery/92321687/Dusty-Times-Lifestyle-Journal"
+                data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
@@ -1792,6 +1796,7 @@
             <svg 
                 data-project="McM Sound - Agency"
                 data-url="https://www.behance.net/gallery/92284455/McM-Sound-Branding"
+                data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
@@ -1807,6 +1812,11 @@
                         c0.4-0.1,0.7,0.3,0.5,0.7l-38.2,56.7C123.1,143,123,143.1,122.9,143.1z"/>
                 </g>
             </svg>
+            <div 
+                class="project-logo"
+                data-invert="true">
+                <img src="../lib/img/brett.jpg">
+            </div>
 
         </div>
         

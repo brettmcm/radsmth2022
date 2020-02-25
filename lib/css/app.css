@@ -18,18 +18,23 @@ a {
   text-decoration: none;
   color: fuchsia;
 }
-a:hover {
-  text-decoration: line-through;
-  color: #333;
-}
 a.inverted {
-  color: #333;
-}
-a.inverted:hover {
-  color: fuchsia;
+  color: unset;
 }
 a.underline {
   text-decoration: underline;
+}
+@media (hover: hover) {
+  a:hover {
+    text-decoration: line-through;
+    color: #333;
+  }
+  a.inverted:hover {
+    color: fuchsia;
+  }
+  a.underline:hover {
+    text-decoration: underline;
+  }
 }
 
 .faded {
@@ -37,7 +42,7 @@ a.underline {
 }
 
 html, body {
-  min-height: calc(100vh - 10vw);
+  min-height: calc((var(--vh, 1vh) * 100) - 10vw);
   user-select: none;
 }
 
@@ -49,6 +54,11 @@ body {
   margin: 0;
   padding: 5vw;
   color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+body.inverted {
+  background: #111;
+  color: #f0f0f0;
 }
 body.boxes {
   border: 1px solid #333;
