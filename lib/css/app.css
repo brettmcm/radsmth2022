@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap");
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1440 - 400) );
@@ -16,17 +16,17 @@ h1.page-title {
 
 a {
   text-decoration: none;
-  color: #00ff9d;
+  color: fuchsia;
 }
 a:hover {
   text-decoration: line-through;
-  color: black;
+  color: #333;
 }
 a.inverted {
-  color: black;
+  color: #333;
 }
 a.inverted:hover {
-  color: #00ff9d;
+  color: fuchsia;
 }
 a.underline {
   text-decoration: underline;
@@ -38,13 +38,17 @@ a.underline {
 
 html, body {
   min-height: calc(100vh - 10vw);
+  user-select: none;
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
   padding: 5vw;
+  color: #333;
 }
 body.boxes {
   border: 1px solid #333;
@@ -67,8 +71,13 @@ img {
 nav {
   display: flex;
   justify-content: flex-end;
-  align-items: stretch;
+  align-items: flex-start;
   width: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+nav a {
+  pointer-events: all;
 }
 nav .name {
   margin-right: auto;
@@ -76,8 +85,15 @@ nav .name {
 nav a:not(:last-child):not(:first-child) {
   margin-right: 1em;
 }
+nav a.off {
+  display: none;
+}
+nav a.on {
+  text-decoration: line-through;
+  color: fuchsia;
+}
 nav a.active {
-  color: #00ff9d;
+  color: fuchsia;
   text-decoration: line-through;
 }
 

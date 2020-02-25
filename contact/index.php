@@ -13,6 +13,7 @@
 
     <h2>Contact</h2>
 
+    <?php include '../components/footer.php';?>
 
 </body>
 

@@ -1,12 +1,17 @@
 html, body {
-    min-height: calc(100vh - 10vw);    
+    min-height: calc(100vh - 10vw);
+    user-select: none;  
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
     padding: 5vw;
+    
+    color: $foreground;
 
     &.boxes {
         border: 1px solid #333;

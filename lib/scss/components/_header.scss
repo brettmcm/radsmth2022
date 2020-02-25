@@ -1,10 +1,15 @@
 nav {
     display: flex;
     justify-content: flex-end;
-    align-items: stretch;
+    align-items: flex-start;
     width: 100%;
+    z-index:10;
+    pointer-events: none;
+    a { pointer-events: all; }
     .name { margin-right: auto; }
     a:not(:last-child):not(:first-child) { margin-right: 1em; }
+    a.off { display: none; }
+    a.on { text-decoration: line-through; color: $primary;}
     a.active {
         color: $primary;
         text-decoration: line-through;
