@@ -1819,7 +1819,7 @@
 
     <div class="info">
         <span id="project-title-display">Rally - Consumer Product</span><br>
-        <a id="project-detail-link" class="inverted underline thin" href="">More Details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>arrow-top-right</title><g stroke-width="1"><line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.5" y1="1.5" x2="1.5" y2="14.5"></line> <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="7.5,1.5 14.5,1.5 14.5,8.5 "></polyline></g></svg></a>
+        <a id="project-detail-link" class="inverted underline thin" href="" target="_new">More Details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>arrow-top-right</title><g stroke-width="1"><line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.5" y1="1.5" x2="1.5" y2="14.5"></line> <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="7.5,1.5 14.5,1.5 14.5,8.5 "></polyline></g></svg></a>
     </div>
 
 
