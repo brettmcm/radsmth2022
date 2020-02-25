@@ -15,7 +15,12 @@
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   max-height: 100vh;
-  background: #f0f0f0;
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+.display svg.inverted {
+  background-color: #111;
 }
 .display img {
   position: absolute;
@@ -75,7 +80,6 @@
   font-size: 0.9em;
 }
 .info a {
-  font-weight: 300;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -90,8 +94,16 @@
   stroke: fuchsia;
 }
 
+.pagination {
+  position: absolute;
+  bottom: 5vw;
+  right: 5vw;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
 body.inverted .arrow-right, body.inverted .arrow-left {
-  stroke: #f0f0f0;
+  stroke: #f9f9f9;
 }
 @media (hover: hover) {
   body.inverted .arrow-right:hover, body.inverted .arrow-left:hover {
@@ -99,7 +111,7 @@ body.inverted .arrow-right, body.inverted .arrow-left {
   }
 }
 body.inverted .info a svg {
-  stroke: #f0f0f0;
+  stroke: #f9f9f9;
 }
 body.inverted .info a:hover svg {
   stroke: fuchsia;

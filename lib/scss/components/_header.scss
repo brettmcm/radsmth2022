@@ -1,17 +1,71 @@
-nav {
+header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
     z-index:10;
     pointer-events: none;
-    a { pointer-events: all; }
-    .name { margin-right: auto; }
-    a:not(:last-child):not(:first-child) { margin-right: 1em; }
-    a.off { display: none; }
+    a {
+        pointer-events: all;
+    }
+    .name {
+        margin-right: auto;
+        font-size: 1.25em;
+    }
     a.on { text-decoration: line-through; color: $primary;}
     a.active {
         color: $primary;
         text-decoration: line-through;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 100);
+        background: $background;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin: 5vw 0;
+            font-size: 2em;
+        }
+        &.off {
+            display:none;
+        }
+    }
+    #menu {
+        font-size: 1.25em;
+        margin-left: 1em;
+        z-index: 21;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        .name {
+            font-size: unset;
+        }
+        nav {
+            position: relative;
+            top: unset;
+            left: unset;
+            background: none;
+            z-index: unset;
+            display: inline-block;
+            width: auto;
+            height: auto;
+            a { font-size: unset; }
+            a:not(:last-child) { margin-right: 1em; }
+            &.off {
+                display: inline;
+            }
+        }
+        #menu {
+            display: none;
+        }
     }
 }

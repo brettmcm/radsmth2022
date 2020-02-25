@@ -1,12 +1,21 @@
+@import '../base/color';
+
+h2 {    
+    font-size: 2.5em;
+    margin: 2em 0 0.5em 0;
+}
+   
 .layout {
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
-    padding: 5vw 0 0 0;
+    .portrait {
+        width: 100%;
+        height: 110vw;
+        object-fit: cover;
+    }
 
-    img { width: 25%; border-radius: 1px;}
-    .copy { width: 70%; }
 }
 
 .cards {
@@ -18,5 +27,24 @@
         width: 33%;
         border:1px solid black;
         border-radius: 1px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .layout {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .portrait {
+            width: 30%;
+            height: auto;
+        }
+        .copy {
+            width: 65%;
+            font-size:1.75em;
+            p:first-child {
+                margin-top: 0;
+            }
+        }
     }
 }

@@ -15,7 +15,7 @@
 
         <div class="owl-carousel">
             <svg
-                data-project="Rally - Consumer Product"
+                data-project="Rally—Consumer Product"
                 data-url="https://www.behance.net/gallery/92311931/Rally-Branding"
                 data-invert="false"
                 class="project-logo"
@@ -47,7 +47,7 @@
                 </g>
             </svg>
             <svg
-                data-project="Mosaic - Restaurant"
+                data-project="Mosaic—Restaurant"
                 data-url="https://www.behance.net/gallery/92308619/Mosaic-Restaurant-Branding"
                 data-invert="false"
                 class="project-logo"
@@ -128,8 +128,8 @@
                 </g>
             </svg>
             <svg
-                data-project="The Beer House - Bar"
-                project-url="https://www.behance.net/gallery/92311293/The-Beer-House-Branding"
+                data-project="The Beer House—Bar"
+                data-url="https://www.behance.net/gallery/92311293/The-Beer-House-Branding"
                 data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1755,7 +1755,7 @@
                 </g>
             </svg>
             <svg
-                data-project="Dusty Times - Magazine"
+                data-project="Dusty Times—Magazine"
                 data-url="https://www.behance.net/gallery/92321687/Dusty-Times-Lifestyle-Journal"
                 data-invert="false"
                 class="project-logo"
@@ -1794,16 +1794,13 @@
                 </g>
             </svg>
             <svg 
-                data-project="McM Sound - Agency"
+                data-project="McM Sound—Agency"
                 data-url="https://www.behance.net/gallery/92284455/McM-Sound-Branding"
                 data-invert="false"
                 class="project-logo"
                 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
-                <style type="text/css">
-                    .st0{fill:#222222;}
-                </style>
-                <g>
+                <g fill="#222">
                     <path class="st0" d="M85.9,165.3l-22.9,5.4c-0.4,0.1-0.7-0.3-0.5-0.7l49-72.8c0.1-0.1,0.2-0.2,0.3-0.2l22.9-5.4
                         c0.4-0.1,0.7,0.3,0.5,0.7l-49,72.8C86.1,165.2,86,165.2,85.9,165.3z"/>
                     <path class="st0" d="M138.7,152.8l-22.9,5.4c-0.4,0.1-0.7-0.3-0.5-0.7l49-72.8c0.1-0.1,0.2-0.2,0.3-0.2l22.9-5.4
@@ -1812,11 +1809,6 @@
                         c0.4-0.1,0.7,0.3,0.5,0.7l-38.2,56.7C123.1,143,123,143.1,122.9,143.1z"/>
                 </g>
             </svg>
-            <div 
-                class="project-logo"
-                data-invert="true">
-                <img src="../lib/img/brett.jpg">
-            </div>
 
         </div>
         
@@ -1827,10 +1819,13 @@
 
     <div class="info">
         <span id="project-title-display">Rally - Consumer Product</span><br>
-        <a id="project-detail-link" class="inverted underline" href="">More Details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>arrow-top-right</title><g stroke-width="1"><line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.5" y1="1.5" x2="1.5" y2="14.5"></line> <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="7.5,1.5 14.5,1.5 14.5,8.5 "></polyline></g></svg></a>
+        <a id="project-detail-link" class="inverted underline thin" href="">More Details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>arrow-top-right</title><g stroke-width="1"><line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.5" y1="1.5" x2="1.5" y2="14.5"></line> <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="7.5,1.5 14.5,1.5 14.5,8.5 "></polyline></g></svg></a>
     </div>
 
+
     <?php include '../components/footer.php';?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../lib/js/work-carousel.js"></script>
 
 </body>
 

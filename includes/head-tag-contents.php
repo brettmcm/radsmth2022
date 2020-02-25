@@ -34,4 +34,5 @@
     <meta name="keywords" content="" /> 
     
     <link rel="stylesheet" href="../lib/css/app.css">
+    <link rel="stylesheet" href="lib/css/pages/contact.css">
 <?php } ?>

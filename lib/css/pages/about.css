@@ -1,15 +1,16 @@
+h2 {
+  font-size: 2.5em;
+  margin: 2em 0 0.5em 0;
+}
+
 .layout {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5vw 0 0 0;
+  flex-direction: column;
 }
-.layout img {
-  width: 25%;
-  border-radius: 1px;
-}
-.layout .copy {
-  width: 70%;
+.layout .portrait {
+  width: 100%;
+  height: 110vw;
+  object-fit: cover;
 }
 
 .cards {
@@ -21,6 +22,25 @@
   width: 33%;
   border: 1px solid black;
   border-radius: 1px;
+}
+
+@media only screen and (min-width: 600px) {
+  .layout {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .layout .portrait {
+    width: 30%;
+    height: auto;
+  }
+  .layout .copy {
+    width: 65%;
+    font-size: 1.75em;
+  }
+  .layout .copy p:first-child {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

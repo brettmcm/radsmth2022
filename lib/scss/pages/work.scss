@@ -16,7 +16,12 @@
         height: calc(var(--vh, 1vh) * 100);
         width: 100%;
         max-height: 100vh;
-        background: $background;
+        background-color: $background;
+        background-size: cover;
+        background-position: 50%, 50%;
+        &.inverted {
+            background-color: #111;
+        }
     }
     img {
         position: absolute;
@@ -68,7 +73,6 @@
     left:5vw;
     font-size:0.9em;
     a { 
-        font-weight: 300;
         display: inline-flex;
         justify-content: flex-start;
         align-items: center;
@@ -83,6 +87,14 @@
         }
     }
     
+}
+
+.pagination {
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
 body.inverted {

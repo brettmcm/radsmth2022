@@ -14,6 +14,10 @@ h1.page-title {
   margin-top: 5vw;
 }
 
+p {
+  line-height: 1.4em;
+}
+
 a {
   text-decoration: none;
   color: fuchsia;
@@ -23,6 +27,9 @@ a.inverted {
 }
 a.underline {
   text-decoration: underline;
+}
+a.thin {
+  font-weight: 300;
 }
 @media (hover: hover) {
   a:hover {
@@ -54,11 +61,9 @@ body {
   margin: 0;
   padding: 5vw;
   color: #333;
-  transition: background 0.3s, color 0.3s;
 }
 body.inverted {
-  background: #111;
-  color: #f0f0f0;
+  color: #f9f9f9;
 }
 body.boxes {
   border: 1px solid #333;
@@ -78,7 +83,7 @@ img {
   border-radius: 1px;
 }
 
-nav {
+header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -86,25 +91,73 @@ nav {
   z-index: 10;
   pointer-events: none;
 }
-nav a {
+header a {
   pointer-events: all;
 }
-nav .name {
+header .name {
   margin-right: auto;
+  font-size: 1.25em;
 }
-nav a:not(:last-child):not(:first-child) {
-  margin-right: 1em;
+header a.on {
+  text-decoration: line-through;
+  color: fuchsia;
 }
-nav a.off {
+header a.active {
+  color: fuchsia;
+  text-decoration: line-through;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background: #f9f9f9;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  margin: 5vw 0;
+  font-size: 2em;
+}
+header nav.off {
   display: none;
 }
-nav a.on {
-  text-decoration: line-through;
-  color: fuchsia;
+header #menu {
+  font-size: 1.25em;
+  margin-left: 1em;
+  z-index: 21;
 }
-nav a.active {
-  color: fuchsia;
-  text-decoration: line-through;
+
+@media only screen and (min-width: 600px) {
+  header .name {
+    font-size: unset;
+  }
+  header nav {
+    position: relative;
+    top: unset;
+    left: unset;
+    background: none;
+    z-index: unset;
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
+  header nav a {
+    font-size: unset;
+  }
+  header nav a:not(:last-child) {
+    margin-right: 1em;
+  }
+  header nav.off {
+    display: inline;
+  }
+  header #menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
