@@ -1,16 +1,22 @@
 h2 {
   font-size: 2.5em;
-  margin: 2em 0 0.5em 0;
 }
 
 .layout {
   display: flex;
   flex-direction: column;
+  margin: 2em 0 2em 0;
 }
 .layout .portrait {
   width: 100%;
   height: 110vw;
   object-fit: cover;
+}
+.layout ol {
+  padding-inline-start: 2.5em;
+}
+.layout ol li {
+  font-size: 1.75em;
 }
 
 .cards {
@@ -36,10 +42,7 @@ h2 {
   }
   .layout .copy {
     width: 65%;
-    font-size: 1.75em;
-  }
-  .layout .copy p:first-child {
-    margin-top: 0;
+    font-size: 1em;
   }
 }
 
