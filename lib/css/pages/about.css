@@ -12,22 +12,54 @@ h2 {
   height: 110vw;
   object-fit: cover;
 }
-.layout ol {
-  padding-inline-start: 2.5em;
-}
-.layout ol li {
-  font-size: 1.75em;
-}
 
-.cards {
+ul {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: stretch;
+  padding: 0;
+  margin: 2em 0;
 }
-.cards div {
-  width: 33%;
-  border: 1px solid black;
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0.5em;
+}
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ul li a svg {
+  width: 40%;
+  fill: #333;
+}
+ul li a p {
+  text-align: center;
+  margin-bottom: 0;
+}
+ul li a:hover svg {
+  fill: fuchsia;
+}
+ul.services {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+ul.services li {
+  padding: 0.25em;
+  border: 3px solid #333;
   border-radius: 1px;
+  white-space: nowrap;
+  font-size: 0.9em;
+  margin-bottom: 0.25em;
+}
+ul.services li:not(:last-child) {
+  margin-right: 0.25em;
 }
 
 @media only screen and (min-width: 600px) {

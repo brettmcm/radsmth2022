@@ -17,24 +17,56 @@ h2 {
         object-fit: cover;
     }
 
-    ol {
-        padding-inline-start: 2.5em;
-        li {
-            font-size:1.75em;
-        }
-    }
+    
 
 }
 
-.cards {
+ul {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: stretch;
-
-    div {
-        width: 33%;
-        border:1px solid black;
-        border-radius: 1px;
+    padding: 0;
+    margin: 2em 0;
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0.5em;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            svg {
+                width: 40%;
+                fill: $foreground;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 0;
+            }
+            &:hover {
+                svg { fill: $primary; }
+            }
+        }
+    }
+    &.services {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 1em 0;
+        li {
+            padding: 0.25em;
+            border: 3px solid $foreground;
+            border-radius: 1px;
+            white-space: nowrap;
+            font-size: 0.9em;
+            margin-bottom: 0.25em;
+            &:not(:last-child) {
+                margin-right: 0.25em;
+            }
+        }
     }
 }
 
