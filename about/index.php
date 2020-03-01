@@ -18,7 +18,7 @@
             <div class="copy">
                 <h2>&mdash;<br>Hello</h2>
                 <p>I've been working as a graphic designer for over a decade. Experience working on everything from designing and developing web apps to directing video shoots has given me a generalist toolbox that's proven invaluable in my understanding of—and approach to—branding and creative direction.</p>
-                <p>I've worked with some friends like Stance, Oakley, Kawasaki, Dusty Times, Thales, Fuse Interactice, and NuContext.</p>
+                <p>I've worked with some friends like Stance, Oakley, Kawasaki, Dusty Times, Thales, Album Agency, Fuse Interactice, and NuContext.</p>
                 <p>In 2016, I started Radsmth as an anti-agency model with the intention to deliver agency-quality design, a deliberate focus on direct customer service and transparent, affordable pricing.</p>
                 <p><a href="/contact">Let's start talking</a>!</p>
                 
