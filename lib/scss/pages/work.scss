@@ -71,6 +71,7 @@
     bottom: 5vw;
     left:5vw;
     font-size:0.9em;
+    mix-blend-mode: difference;
     a { 
         display: inline-flex;
         justify-content: flex-start;
@@ -80,6 +81,7 @@
             margin-left: 0.25em;
             width: 1.5vw;
             min-width: 0.7em;
+            transition: stroke 0.3s;
         }
         &:hover {
             svg { stroke: $primary; }
@@ -99,7 +101,7 @@
 body.inverted {
     header {
         nav {
-            background: #111;
+            // background: #111;
         }
     }
     .arrow-right, .arrow-left {

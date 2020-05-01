@@ -72,6 +72,7 @@
   bottom: 5vw;
   left: 5vw;
   font-size: 0.9em;
+  mix-blend-mode: difference;
 }
 .info a {
   display: inline-flex;
@@ -83,6 +84,7 @@
   margin-left: 0.25em;
   width: 1.5vw;
   min-width: 0.7em;
+  transition: stroke 0.3s;
 }
 .info a:hover svg {
   stroke: fuchsia;
@@ -96,9 +98,6 @@
   font-weight: 300;
 }
 
-body.inverted header nav {
-  background: #111;
-}
 body.inverted .arrow-right, body.inverted .arrow-left {
   stroke: #f9f9f9;
 }

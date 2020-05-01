@@ -66,6 +66,7 @@ body {
   margin: 0;
   padding: 5vw;
   color: #333;
+  transition: color 0.3s;
 }
 body.inverted {
   color: #f9f9f9;
