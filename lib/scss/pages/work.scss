@@ -7,18 +7,23 @@
     width: 100%;
     height: calc(var(--vh, 1vh) * 100);
     padding:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    display: inline-block;
+    // justify-content: center;
+    // align-items: center;
     z-index:0;
-    color: red;
+
+    // white-space: nowrap;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
     img, svg {
         height: calc(var(--vh, 1vh) * 100);
-        width: 100%;
+        width: 100vw;
         max-height: 100vh;
         background-size: cover;
         background-position: 50%, 50%;
+        scroll-snap-align: center;
         &[data-invert="true"] {
             filter: invert(1);
             background: #eee;
@@ -26,6 +31,7 @@
     }
     .owl-carousel { position: absolute; top: 0; }
     .owl-stage-outer { position: absolute; top: 0; }
+
 }
 
 .arrow-left, .arrow-right {
