@@ -30,7 +30,7 @@
                     <li>Illustration</li>
                     <li>Creative Direction</li>
                     <li>Consultation</li>
-                    <li>Web Design</li>
+                    <li>UX/UI Design</li>
                 </ul>
                 
                 <h3>&mdash;<br>Life Beyond Logos</h3>
