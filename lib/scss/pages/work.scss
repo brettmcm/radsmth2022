@@ -100,11 +100,6 @@
 }
 
 body.inverted {
-    header {
-        nav {
-            // background: #111;
-        }
-    }
     .arrow-right, .arrow-left {
         stroke: $background;
         @media (hover: hover) { 
