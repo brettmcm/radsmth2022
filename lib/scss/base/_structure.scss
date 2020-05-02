@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 5vw;
     color: $foreground;
-    transition: color 0.3s;
+    // transition: color 0.3s;
 
     &.inverted {
         color: $background;

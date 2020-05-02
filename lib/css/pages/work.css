@@ -7,10 +7,11 @@
   padding: 0;
   display: inline-block;
   z-index: 0;
+  white-space: nowrap;
   overflow-y: scroll;
   scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: x mandatory;
 }
 .display img, .display svg {
   height: calc(var(--vh, 1vh) * 100);
@@ -72,7 +73,6 @@
   bottom: 5vw;
   left: 5vw;
   font-size: 0.9em;
-  mix-blend-mode: difference;
 }
 .info a {
   display: inline-flex;
@@ -84,7 +84,6 @@
   margin-left: 0.25em;
   width: 1.5vw;
   min-width: 0.7em;
-  transition: stroke 0.3s;
 }
 .info a:hover svg {
   stroke: fuchsia;

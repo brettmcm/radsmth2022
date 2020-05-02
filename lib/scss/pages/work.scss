@@ -12,11 +12,14 @@
     // align-items: center;
     z-index:0;
 
-    // white-space: nowrap;
+    white-space: nowrap;
     overflow-y: scroll;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(300px);
-    scroll-snap-type: y mandatory;
+    // scroll-snap-points-y: repeat(300px);
+    // scroll-snap-type: y mandatory;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: x mandatory;
+    // scroll-behavior: smooth;
     img, svg {
         height: calc(var(--vh, 1vh) * 100);
         width: 100vw;
@@ -71,7 +74,6 @@
     bottom: 5vw;
     left:5vw;
     font-size:0.9em;
-    mix-blend-mode: difference;
     a { 
         display: inline-flex;
         justify-content: flex-start;
@@ -81,7 +83,7 @@
             margin-left: 0.25em;
             width: 1.5vw;
             min-width: 0.7em;
-            transition: stroke 0.3s;
+            // transition: stroke 0.3s;
         }
         &:hover {
             svg { stroke: $primary; }
