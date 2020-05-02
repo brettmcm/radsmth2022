@@ -26,14 +26,6 @@
   filter: invert(1);
   background: #eee;
 }
-.display .owl-carousel {
-  position: absolute;
-  top: 0;
-}
-.display .owl-stage-outer {
-  position: absolute;
-  top: 0;
-}
 
 .arrow-left, .arrow-right {
   position: absolute;
