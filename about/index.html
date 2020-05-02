@@ -1,15 +1,29 @@
-<?php include("../config.php");?>
 <!DOCTYPE html>
 
 <html>
 
 <head>
-    <?php include("../includes/head-tag-contents.php");?>
+    <title>radsmth | about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" /> 
+    
+    <link rel="stylesheet" href="lib/css/app.css">
+    <link rel="stylesheet" href="lib/css/pages/about.css">
 </head>
 
 <body>
 
-    <?php include '../components/header.php';?>
+    <header>
+        <a href="/" class="name inverted">Radsmth&mdash;<br><span class="faded"> is Brett McMillin</span></a>
+        <nav class="off">
+            <a href="/work" class="inverted menu-link">Work</a>
+            <a href="/about" class="inverted menu-link active">About</a>
+            <a href="/contact" class="inverted menu-link">Contact</a>
+        </nav>
+        <a href="#" class="inverted" id="menu">Menu</a>
+    </header>
 
     <div>
 
@@ -23,15 +37,7 @@
                 <p><a href="/contact">Let's start talking</a>!</p>
                 
                 <h3>&mdash;<br>Services</h3>
-                <ul class="services" id="service-list">
-                    <!-- <li>Branding</li>
-                    <li>Logo Design</li>
-                    <li>Graphic Design</li>
-                    <li>Illustration</li>
-                    <li>Creative Direction</li>
-                    <li>Consultation</li>
-                    <li>UX/UI Design</li> -->
-                </ul>
+                <ul class="services" id="service-list"></ul>
                 
                 <h3>&mdash;<br>Life Beyond Logos</h3>
                 <ul>
@@ -60,7 +66,11 @@
 
     </div>
 
-    <?php include '../components/footer.php';?>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="../lib/js/app.js"></script>
     <script src="../lib/js/services.js"></script>
 
 </body>
