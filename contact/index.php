@@ -13,7 +13,7 @@
 
     <div>
         <h2>&mdash;<span>Contact</span></h2>
-        <p>Need a logo design, solid branding or other graphic design work? The best way to start is to <a href="mailto:brett@radsmth.com?subject=Let's make some radness!">email me</a> and say 'hello!'</p>
+        <p>Need a logo design, solid branding or other graphic design work? The best way to start is to <a href="mailto:brett@radsmth.com?subject=Let's Make Some Radness&body=Hello!" target="_new">email me</a> and say 'hello!'</p>
         <p>Or you can find me on <a href="http://www.instagram.com/radsmth">Instagram</a>, <a href="http://www.twitter.com/radsmth">Twitter</a>, <a href="http://www.behance.net/brettmcm">Behance</a>, <a href="http://www.dribbble.com/brettmcm">Dribble</a>, or <a href="http://www.linkedin.com/in/brettmcm">LinkedIn</a>.
         <!-- <a href="mailto:brett@radsmth.com" class="inverted underline thin">brett@radsmth.com</a>
         <div class="social">

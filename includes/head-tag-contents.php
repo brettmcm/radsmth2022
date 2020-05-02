@@ -20,10 +20,6 @@
 <?php if ($CURRENT_PAGE == "work") { ?>
     <meta name="description" content="" />
     <meta name="keywords" content="" /> 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css">
 
     <link rel="stylesheet" href="../lib/css/app.css">
     <link rel="stylesheet" href="../lib/css/pages/work.css">

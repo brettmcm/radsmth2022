@@ -19,18 +19,18 @@
                 <h2>&mdash;<br>Hello</h2>
                 <p>I've been working as a graphic designer for over a decade. Experience working on everything from designing and developing web apps to directing video shoots has given me a generalist toolbox that's proven invaluable in my understanding of—and approach to—branding and creative direction.</p>
                 <p>I've worked with some friends like Stance, Oakley, Kawasaki, Dusty Times, Thales, Album Agency, Fuse Interactice, and NuContext.</p>
-                <p>In 2016, I started Radsmth as an anti-agency model with the intention to deliver agency-quality design, a deliberate focus on direct customer service and transparent, affordable pricing.</p>
+                <p>In 2016, I started Radsmth as an anti-agency model with the intention to deliver quality design, a deliberate focus on customer service and transparent, affordable pricing.</p>
                 <p><a href="/contact">Let's start talking</a>!</p>
                 
                 <h3>&mdash;<br>Services</h3>
-                <ul class="services">
-                    <li>Branding</li>
+                <ul class="services" id="service-list">
+                    <!-- <li>Branding</li>
                     <li>Logo Design</li>
                     <li>Graphic Design</li>
                     <li>Illustration</li>
                     <li>Creative Direction</li>
                     <li>Consultation</li>
-                    <li>Web Design</li>
+                    <li>UX/UI Design</li> -->
                 </ul>
                 
                 <h3>&mdash;<br>Life Beyond Logos</h3>
@@ -61,6 +61,7 @@
     </div>
 
     <?php include '../components/footer.php';?>
+    <script src="../lib/js/services.js"></script>
 
 </body>
 
