@@ -25,7 +25,6 @@
 
 
     <?php include '../components/footer.php';?>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../lib/js/work-carousel.js"></script>
 
 </body>

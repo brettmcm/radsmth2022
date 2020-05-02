@@ -23,14 +23,14 @@
                 <p><a href="/contact">Let's start talking</a>!</p>
                 
                 <h3>&mdash;<br>Services</h3>
-                <ul class="services">
-                    <li>Branding</li>
+                <ul class="services" id="service-list">
+                    <!-- <li>Branding</li>
                     <li>Logo Design</li>
                     <li>Graphic Design</li>
                     <li>Illustration</li>
                     <li>Creative Direction</li>
                     <li>Consultation</li>
-                    <li>UX/UI Design</li>
+                    <li>UX/UI Design</li> -->
                 </ul>
                 
                 <h3>&mdash;<br>Life Beyond Logos</h3>
@@ -61,6 +61,7 @@
     </div>
 
     <?php include '../components/footer.php';?>
+    <script src="../lib/js/services.js"></script>
 
 </body>
 
