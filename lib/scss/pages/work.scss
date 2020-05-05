@@ -1,5 +1,11 @@
 @import '../base/color';
 
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 .display {
     position: absolute;
     top:0;
@@ -28,6 +34,10 @@
         background-size: cover;
         background-position: 50%, 50%;
         scroll-snap-align: center;
+        opacity: 0.0;
+        animation: fadeIn ease 1s;
+        -webkit-animation: fadeIn ease 1s;
+        animation-fill-mode: forwards;
         &[data-invert="true"] {
             filter: invert(1);
             background: #eee;
@@ -73,6 +83,10 @@
     bottom: 5vw;
     left:5vw;
     font-size:0.9em;
+    opacity: 0.0;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
     a { 
         display: inline-flex;
         justify-content: flex-start;
