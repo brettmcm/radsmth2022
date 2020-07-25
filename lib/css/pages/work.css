@@ -1,11 +1,10 @@
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
+
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
+
 .display {
   position: absolute;
   top: 0;
@@ -20,105 +19,82 @@
   overflow-x: hidden;
   scroll-snap-type: mandatory;
   scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: x mandatory;
-}
-.display img, .display svg {
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100vw;
-  max-height: 100vh;
-  background-size: cover;
-  background-position: 50%, 50%;
-  scroll-snap-align: center;
-  opacity: 0;
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  animation-fill-mode: forwards;
-}
-.display img[data-invert=true], .display svg[data-invert=true] {
-  filter: invert(1);
-  background: #eee;
-}
+  scroll-snap-type: x mandatory; }
+  .display img, .display svg {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    max-height: 100vh;
+    background-size: cover;
+    background-position: 50%, 50%;
+    scroll-snap-align: center;
+    opacity: 0.0;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    animation-fill-mode: forwards; }
+    .display img[data-invert="true"], .display svg[data-invert="true"] {
+      filter: invert(1);
+      background: #eee; }
 
 .arrow-left, .arrow-right {
   position: absolute;
   bottom: 5vw;
   fill: none;
-  stroke: #333;
-  z-index: 2;
-}
+  stroke: #333333;
+  z-index: 2; }
 
 .arrow-left {
-  right: calc(5vw + 65px);
-}
+  right: calc(5vw + 65px); }
 
 .arrow-right {
-  right: 5vw;
-}
+  right: 5vw; }
 
 @media only screen and (min-width: 600px) {
   .arrow-left, .arrow-right {
     bottom: unset;
     top: 50%;
-    transform: translateY(-50%);
-  }
+    transform: translateY(-50%); }
 
   .arrow-left {
     left: 5vw;
-    right: unset;
-  }
-}
+    right: unset; } }
 @media (hover: hover) {
   .arrow-left:hover, .arrow-right:hover {
-    stroke: fuchsia;
-    cursor: pointer;
-  }
-}
+    stroke: magenta;
+    cursor: pointer; } }
 .info {
   position: absolute;
   bottom: 5vw;
   left: 5vw;
   font-size: 0.9em;
-  opacity: 0;
+  opacity: 0.0;
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
-  animation-fill-mode: forwards;
-}
-.info a {
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.info a svg {
-  stroke: #333;
-  margin-left: 0.25em;
-  width: 1.5vw;
-  min-width: 0.7em;
-}
-.info a:hover svg {
-  stroke: fuchsia;
-}
+  animation-fill-mode: forwards; }
+  .info a {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .info a svg {
+      stroke: #333333;
+      margin-left: 0.25em;
+      width: 1.5vw;
+      min-width: 0.7em; }
+    .info a:hover svg {
+      stroke: magenta; }
 
 .pagination {
   position: absolute;
   bottom: 5vw;
   right: 5vw;
   font-size: 0.9em;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 body.inverted .arrow-right, body.inverted .arrow-left {
-  stroke: #f9f9f9;
-}
-@media (hover: hover) {
-  body.inverted .arrow-right:hover, body.inverted .arrow-left:hover {
-    stroke: fuchsia;
-  }
-}
+  stroke: #f9f9f9; }
+  @media (hover: hover) {
+    body.inverted .arrow-right:hover, body.inverted .arrow-left:hover {
+      stroke: magenta; } }
 body.inverted .info a svg {
-  stroke: #f9f9f9;
-}
+  stroke: #f9f9f9; }
 body.inverted .info a:hover svg {
-  stroke: fuchsia;
-}
-
-/*# sourceMappingURL=work.css.map */
+  stroke: magenta; }

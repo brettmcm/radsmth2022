@@ -3,60 +3,45 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (1440 - 400) );
-}
+  font-size: calc(16px + (24 - 16) * (100vw - 400px) / (1440 - 400) ); }
 
 h1, h2, h3, h4, h5 {
-  margin: 0;
-}
+  margin: 0; }
 
 h1.page-title {
-  margin-top: 5vw;
-}
+  margin-top: 5vw; }
 
 h3 {
-  font-size: 1.75em;
-}
+  font-size: 1.75em; }
 
 p {
   line-height: 1.4em;
-  max-width: 900px;
-}
+  max-width: 900px; }
 
 a {
   text-decoration: none;
-  color: fuchsia;
-}
-a.inverted {
-  color: unset;
-}
-a.underline {
-  text-decoration: underline;
-}
-a.thin {
-  font-weight: 300;
-}
-@media (hover: hover) {
-  a:hover {
-    text-decoration: line-through;
-    color: #333;
-  }
-  a.inverted:hover {
-    color: fuchsia;
-  }
-  a.underline:hover {
-    text-decoration: underline;
-  }
-}
+  color: magenta; }
+  a.inverted {
+    color: unset; }
+  a.underline {
+    text-decoration: underline; }
+  a.thin {
+    font-weight: 300; }
+  @media (hover: hover) {
+    a:hover {
+      text-decoration: line-through;
+      color: #333333; }
+    a.inverted:hover {
+      color: magenta; }
+    a.underline:hover {
+      text-decoration: underline; } }
 
 .faded {
-  opacity: 0.2;
-}
+  opacity: 0.2; }
 
 html, body {
   min-height: calc((var(--vh, 1vh) * 100) - 10vw);
-  user-select: none;
-}
+  user-select: none; }
 
 body {
   position: relative;
@@ -65,28 +50,22 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 5vw;
-  color: #333;
-}
-body.inverted {
-  color: #f9f9f9;
-}
-body.boxes {
-  border: 1px solid #333;
-}
-body.boxes * {
-  border: 1px solid #333;
-}
+  color: #333333; }
+  body.inverted {
+    color: #f9f9f9; }
+  body.boxes {
+    border: 1px solid #333; }
+    body.boxes * {
+      border: 1px solid #333; }
 
 section {
   display: block;
-  padding: 5vw 0;
-}
+  padding: 5vw 0; }
 
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 1px;
-}
+  border-radius: 1px; }
 
 header {
   display: flex;
@@ -94,54 +73,44 @@ header {
   align-items: flex-end;
   width: 100%;
   z-index: 10;
-  pointer-events: none;
-}
-header a {
-  pointer-events: all;
-}
-header .name {
-  margin-right: auto;
-  font-size: 1.25em;
-  z-index: 20;
-}
-header a.on {
-  text-decoration: line-through;
-  color: fuchsia;
-}
-header a.active {
-  color: fuchsia;
-  text-decoration: line-through;
-}
-header nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
-  background: #f9f9f9;
-  z-index: 15;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header nav a {
-  margin: 5vw 0;
-  font-size: 2em;
-}
-header nav.off {
-  display: none;
-}
-header #menu {
-  font-size: 1.25em;
-  margin-left: 1em;
-  z-index: 21;
-}
+  pointer-events: none; }
+  header a {
+    pointer-events: all; }
+  header .name {
+    margin-right: auto;
+    font-size: 1.25em;
+    z-index: 20; }
+  header a.on {
+    text-decoration: line-through;
+    color: magenta; }
+  header a.active {
+    color: magenta;
+    text-decoration: line-through; }
+  header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background: #f9f9f9;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header nav a {
+      margin: 5vw 0;
+      font-size: 2em; }
+    header nav.off {
+      display: none; }
+  header #menu {
+    font-size: 1.25em;
+    margin-left: 1em;
+    z-index: 21; }
 
 @media only screen and (min-width: 600px) {
   header .name {
-    font-size: unset;
-  }
+    font-size: unset; }
   header nav {
     position: relative;
     top: unset;
@@ -150,20 +119,12 @@ header #menu {
     z-index: unset;
     display: inline-block;
     width: auto;
-    height: auto;
-  }
-  header nav a {
-    font-size: unset;
-  }
-  header nav a:not(:last-child) {
-    margin-right: 1em;
-  }
-  header nav.off {
-    display: inline;
-  }
+    height: auto; }
+    header nav a {
+      font-size: unset; }
+    header nav a:not(:last-child) {
+      margin-right: 1em; }
+    header nav.off {
+      display: inline; }
   header #menu {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=app.css.map */
+    display: none; } }
