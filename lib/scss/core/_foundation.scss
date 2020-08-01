@@ -1,0 +1,46 @@
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+    
+html {
+    // min-height: calc((var(--vh, 1vh) * 100) - 10vw);
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    font-family: usual,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:calc(1em + 0.35vw);
+    color: #333;
+
+    margin: 0;
+}
+
+.rlb {
+    display: block;
+}
+
+.hero {
+    padding: 0 5vw;
+    height: calc(100vh - 4em - 15vw);
+    margin-bottom: 5vw;
+}
+
+section {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 1000px) {
+    .rlb {
+        display: none;
+    }
+}

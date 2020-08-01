@@ -1,14 +1,11 @@
-h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em; }
-  h2 span {
-    display: block; }
-
-.social {
-  padding-top: 1em; }
-  .social a {
-    margin-right: 0.5em; }
-    .social a svg {
-      fill: #333333; }
-    .social a:hover svg {
-      fill: magenta; }
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .splash h1 {
+    font-size: calc(1rem + 5vw);
+    margin: 0; }
+  .splash p {
+    font-size: calc(1rem + 3vw);
+    margin: 0;
+    line-height: 1.3em; }

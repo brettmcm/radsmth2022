@@ -1,21 +1,16 @@
-@import '../base/color';
+.splash {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    span {
-        display: block;
+    h1 {
+        font-size: calc(1rem + 5vw);
+        margin:0;
     }
-}
-.social {
-    padding-top: 1em;
-    a {
-        margin-right: 0.5em;
-        svg { fill: $foreground; }
-        &:hover {
-            svg {
-                fill: $primary;
-            }
-        }
+
+    p {
+        font-size: calc(1rem + 3vw);
+        margin:0;
+        line-height: 1.3em;
     }
 }

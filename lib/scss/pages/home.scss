@@ -1,3 +1,237 @@
-h2 {
-    font-size: 2.5em;
+@import 'core/color';
+
+.splash {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h1 {
+        font-size: calc(1.5rem + 5vw);
+        margin:0;
+    }
+
+    p {
+        font-size: calc(1.5rem + 3vw);
+        margin:0;
+        line-height: 1.3em;
+    }
+
+    p span.is1 { animation: cycle1 7s linear infinite; }
+    p span.is2 { animation: cycle2 7s linear infinite; }
+    p span.is3 { animation: cycle3 7s linear infinite; }
+    p span.is4 { animation: cycle4 7s linear infinite; }
+    p span.is5 { animation: cycle5 7s linear infinite; }
+
+    svg {
+        margin: 1em 0.25em;
+        animation: bounce ease-out 1s infinite alternate;
+    }
+}
+
+section.work {
+
+    padding: calc(6em - 1.5vw) 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    .copy {
+        max-width: 1100px;
+        p.number {
+            margin: 0;
+            .lite {
+                font-weight: 300;
+            }
+        }
+        h2 {
+            font-family: maple-web, usual,sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 0.9em;
+            .desc {
+                font-family: usual,sans-serif;
+                font-weight: 300;
+                font-size:0.9em;
+                text-transform: none;
+                margin-left: 0.5em;
+            }
+        }
+    }
+
+    
+
+    .slideshow {
+        position: relative;
+        width: 100%;
+        height: 100vw;
+        max-height: 70vh;
+        margin-bottom: 2em;
+
+        .carousel {
+            position: relative;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            flex-direction:row;
+
+            overflow-x:auto;
+            overflow-y:hidden;
+            
+            &.scrollsnap {
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            img {
+                position: relative;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                scroll-snap-align: center;
+                scroll-snap-stop: always;
+                pointer-events: none;
+            }
+        }
+
+        .controls {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 5vw;
+            transition: opacity 0.1s;
+            opacity:0.5;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                opacity:1;
+            }
+            &.disabled {
+                display: none;
+            }
+        }
+        .prev {
+            left: -5vw;
+            &:hover { cursor: w-resize; }
+        }
+        .next {
+            right: -5vw;
+            &:hover { cursor: e-resize; }
+        }
+
+        .pages {
+            position: relative;
+            // width: 100%;
+            height: 0.15em;
+            margin-top: 0.5em;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            .page {
+                // border-radius: 1em;
+                height: 100%;
+                width: 0.5em;
+                margin-right: 0.25em;
+                background: $foreground;
+                opacity:0.2;
+                transition: opacity 0.2s;
+                &.active { opacity: 1; }
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .controls {
+                display: flex;
+            }
+        }
+    }
+
+    .meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        .details {
+            width: 100%;
+            max-width: 300px;
+            p {
+                font-size: 1rem;
+                margin: 0;
+                line-height: 1.5em;
+            }
+        }
+        .desc {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            font-size: 1rem;
+            line-height: 1.5em;
+            margin: 2em 0 0 0;
+            .cta {
+                display: block;
+                margin-top: 0.5em;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            flex-direction: row;
+            .desc {
+                margin: 0 0 0 100px;
+            }
+        }
+    }
+
+    &.dusty-times {
+        background:#eee;
+        .colorize { color: rgb(122, 115, 100); }
+        a:hover { color: rgb(201, 193, 177); }
+    }
+
+    &.vuori {
+        background: white;
+        color: #7f7f7f;
+        .colorize { color: rgb(95, 167, 208); }
+        a:hover { color: rgb(109, 187, 231); }
+    }
+
+    &.rally-hopper {
+        background: rgb(22, 23, 23);
+        color: white;
+        .colorize { color: rgb(225, 228, 61); }
+        a:hover { color: rgb(242, 255, 122); }
+    }
+
+    &.coastline {
+        background: rgb(80, 166, 225);
+        color: white;
+        .colorize { color: rgb(1, 87, 155); }
+        a:hover { color: rgb(37, 122, 187); }
+    }
+
+    &.mosaic {
+        background: rgb(250, 249, 245);
+        color: rgb(82, 84, 74);
+        .colorize { color: rgb(82, 84, 74); }
+        a:hover { color: rgb(117, 121, 103); }
+    }
+
+    &.jabronis {
+        background: white;
+        .colorize { color: rgb(49, 141, 37); }
+        a:hover { color: rgb(86, 189, 91); }
+    }
+
+    
+
 }

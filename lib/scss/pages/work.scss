@@ -1,4 +1,4 @@
-@import '../base/color';
+@import '../core/color';
 
 
 @keyframes fadeIn {
@@ -17,6 +17,8 @@
     // justify-content: center;
     // align-items: center;
     z-index:0;
+    opacity: 0.9;
+    pointer-events: none;
 
     white-space: nowrap;
     overflow-y: hidden;
@@ -38,6 +40,7 @@
         animation: fadeIn ease 1s;
         -webkit-animation: fadeIn ease 1s;
         animation-fill-mode: forwards;
+    pointer-events: none;
         &[data-invert="true"] {
             filter: invert(1);
             background: #eee;
@@ -72,7 +75,7 @@
 @media (hover: hover) { 
     .arrow-left, .arrow-right {
         &:hover {
-            stroke: $primary;
+            stroke: $primary-hover;
             cursor: pointer;
         }
     }
@@ -92,14 +95,10 @@
         justify-content: flex-start;
         align-items: center;
         svg {
-            stroke: $foreground;
-            margin-left: 0.25em;
-            width: 1.5vw;
-            min-width: 0.7em;
-            // transition: stroke 0.3s;
+            stroke: $primary;
         }
         &:hover {
-            svg { stroke: $primary; }
+            svg { stroke: $primary-hover; }
         }
     }
     

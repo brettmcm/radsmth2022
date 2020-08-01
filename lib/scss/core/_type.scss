@@ -1,0 +1,40 @@
+h1, h3 {
+    font-family: maple-web, usual,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 0.7em;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.4em;
+}
+
+p {
+    line-height: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    transition: color 0.08s;
+    white-space: nowrap;
+    &:hover {
+        color: $primary-hover;
+    }
+    &.invert {
+        color: $foreground;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+    &.inline {
+        color: inherit;
+        text-decoration: underline;
+    }
+}

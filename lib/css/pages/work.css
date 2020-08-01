@@ -14,6 +14,8 @@
   padding: 0;
   display: inline-block;
   z-index: 0;
+  opacity: 0.9;
+  pointer-events: none;
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -30,7 +32,8 @@
     opacity: 0.0;
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
-    animation-fill-mode: forwards; }
+    animation-fill-mode: forwards;
+    pointer-events: none; }
     .display img[data-invert="true"], .display svg[data-invert="true"] {
       filter: invert(1);
       background: #eee; }
@@ -59,7 +62,7 @@
     right: unset; } }
 @media (hover: hover) {
   .arrow-left:hover, .arrow-right:hover {
-    stroke: magenta;
+    stroke: #ff4d4d;
     cursor: pointer; } }
 .info {
   position: absolute;
@@ -75,12 +78,9 @@
     justify-content: flex-start;
     align-items: center; }
     .info a svg {
-      stroke: #333333;
-      margin-left: 0.25em;
-      width: 1.5vw;
-      min-width: 0.7em; }
+      stroke: #0066ff; }
     .info a:hover svg {
-      stroke: magenta; }
+      stroke: #ff4d4d; }
 
 .pagination {
   position: absolute;
@@ -90,11 +90,11 @@
   font-weight: 300; }
 
 body.inverted .arrow-right, body.inverted .arrow-left {
-  stroke: #f9f9f9; }
+  stroke: white; }
   @media (hover: hover) {
     body.inverted .arrow-right:hover, body.inverted .arrow-left:hover {
-      stroke: magenta; } }
+      stroke: #0066ff; } }
 body.inverted .info a svg {
-  stroke: #f9f9f9; }
+  stroke: white; }
 body.inverted .info a:hover svg {
-  stroke: magenta; }
+  stroke: #0066ff; }
