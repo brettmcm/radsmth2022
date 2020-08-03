@@ -159,15 +159,15 @@ p {
 
 a {
   text-decoration: none;
-  color: #df3737;
+  color: #ff3c56;
   transition: color 0.08s;
   white-space: nowrap; }
   a:hover {
-    color: #e34d4d; }
+    color: #ff566c; }
   a.invert {
     color: #333333; }
     a.invert:hover {
-      color: #e34d4d; }
+      color: #ff566c; }
   a.inline {
     color: inherit;
     text-decoration: underline; }
@@ -319,7 +319,7 @@ header {
             margin-left: 0; }
           header nav a.active {
             text-decoration: line-through;
-            color: #df3737;
+            color: #ff3c56;
             pointer-events: none; } }
   header .back-to-top {
     display: none;

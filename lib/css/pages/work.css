@@ -76,7 +76,7 @@
     right: unset; } }
 @media (hover: hover) {
   .arrow-left:hover, .arrow-right:hover {
-    stroke: #e34d4d;
+    stroke: #ff566c;
     cursor: pointer; } }
 .info {
   position: absolute;
@@ -98,10 +98,10 @@
     justify-content: flex-start;
     align-items: center; }
     .info a svg {
-      stroke: #df3737;
+      stroke: #ff3c56;
       transform: translate(2px, 2px); }
     .info a:hover svg {
-      stroke: #e34d4d; }
+      stroke: #ff566c; }
 
 .pagination {
   position: absolute;
@@ -114,8 +114,8 @@ body.inverted .arrow-right, body.inverted .arrow-left {
   stroke: white; }
   @media (hover: hover) {
     body.inverted .arrow-right:hover, body.inverted .arrow-left:hover {
-      stroke: #df3737; } }
+      stroke: #ff3c56; } }
 body.inverted .info a svg {
   stroke: white; }
 body.inverted .info a:hover svg {
-  stroke: #df3737; }
+  stroke: #ff3c56; }
