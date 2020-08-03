@@ -33,8 +33,9 @@ body {
 }
 
 .hero {
+    box-sizing: border-box;
     padding: calc(4em + 15vw) 5vw calc(5em - 5vw) 5vw;
-    // height: calc((var(--vh, 1vh) * 100) - 4em - 15vw);
+    min-height: calc((var(--vh, 1vh) * 100) - 10vw);
     margin-bottom: 5vw;
 }
 
