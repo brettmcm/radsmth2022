@@ -11,7 +11,7 @@ header {
     z-index:999;
 
     .logo {
-        font-family: maple-web, usual,sans-serif;
+        font-family: helvetica, arial, sans-serif;
         font-weight: 900;
         font-style: normal;
         text-transform: uppercase;
@@ -19,6 +19,7 @@ header {
         height: 0.9em;
         z-index: 1000;
         pointer-events: all;
+        letter-spacing: -0.1em;
         &.lite {
             color: $background;
         }
