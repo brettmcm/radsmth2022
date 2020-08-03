@@ -9,7 +9,7 @@
   -ms-animation: fadeIn ease 0.7s;
   animation-fill-mode: forwards; }
   .splash h1 {
-    font-size: calc(1.5rem + 5vw);
+    font-size: calc(3rem + 4vw);
     margin: 0; }
   .splash p {
     font-size: calc(1.5rem + 3vw);
