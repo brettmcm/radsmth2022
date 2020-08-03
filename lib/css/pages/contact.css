@@ -1,11 +1,14 @@
-.splash {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; }
-  .splash h1 {
-    font-size: calc(1rem + 5vw);
-    margin: 0; }
-  .splash p {
-    font-size: calc(1rem + 3vw);
-    margin: 0;
-    line-height: 1.3em; }
+.hero {
+  padding-top: calc(4em + 10vw);
+  animation: fadeIn ease 0.7s;
+  -webkit-animation: fadeIn ease 0.7s;
+  -moz-animation: fadeIn ease 0.7s;
+  -o-animation: fadeIn ease 0.7s;
+  -ms-animation: fadeIn ease 0.7s;
+  animation-fill-mode: forwards; }
+  .hero h1, .hero h3, .hero p {
+    max-width: 1000px; }
+  .hero h3 {
+    margin-top: 2em; }
+  .hero p {
+    line-height: 1.5em; }

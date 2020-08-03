@@ -19,10 +19,13 @@
 
     <header>
         <a href="/" class="logo invert">R—</a>
-        <nav>
+        <div class="hamburger" id="hamburger">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <nav class="nav">
             <a href="/" class="invert">Work</a>
             <a href="/logos" class="invert">Logos</a>
-            <a href="/services" class="invert">Services</a>
             <a href="/about" class="invert">About</a>
             <a href="/contact" class="invert">Contact</a>
         </nav>
@@ -34,7 +37,7 @@
     </header>
 
     <div class="splash hero">
-        <h1>Radsmth</h1>
+        <h1><b>Radsmth</b></h1>
         <p>is
             <span class="is1">Branding</span>
             <span class="is2">Creative Direction</span>
@@ -52,11 +55,11 @@
     <section class="work dusty-times" id="work">
 
         <div class="copy">
-            <p class="number colorize"><b>PROJECT</b>01/06 &#8595;</p>
-            <h2>Dusty Times<span class="desc">Publishing content to respectfully challenge what off-road culture can be</span></h2>
+            <!-- <p class="number colorize"><b>PROJECT</b>01/06 &#8595;</p> -->
+            <h2><span class="colorize">Dusty Times</span> <span class="desc"> Publishing content to respectfully challenge what off-road culture can be</span></h2>
         </div>
         <div class="slideshow">
-            <div class="carousel scrollsnap">
+            <div class="carousel">
                 <img src="/lib/work/dusty-times/dustytimes-casestudy_01.jpg">
                 <img src="/lib/work/dusty-times/dustytimes-casestudy_02.jpg">
                 <img src="/lib/work/dusty-times/dustytimes-casestudy_03.jpg">
@@ -97,7 +100,7 @@
             <div class="details">
                 <p><b>Category</b>&nbsp;&nbsp;Content Marketing</p>
                 <p><b>Collaborators</b>&nbsp;&nbsp;<a href="" class="inline">Boyd Jaynes</a></p>
-                <p><b>Credit</b>&nbsp;&nbsp;Art Direction, Graphic Design, Strategy</p>
+                <p><b>Credit</b>&nbsp;&nbsp;Branding, Art Direction, Graphic Design, Strategy</p>
                 <p><b>Date</b>&nbsp;&nbsp;2020</p>
             </div>
             <p class="desc">
@@ -113,19 +116,51 @@
     <section class="work vuori" id="work">
     
         <div class="copy">
-            <p class="number colorize"><b>PROJECT</b>02/06 &#8595;</p>
-            <h2>Vuori Clothing<span class="desc">A new perspective on performance apparel</span></h2>
+            <!-- <p class="number colorize"><b>PROJECT</b>02/06 &#8595;</p> -->
+            <h2><span class="colorize">Vuori</span> <span class="desc">A new perspective on performance apparel</span></h2>
         </div>
         <div class="slideshow">
-            <a class="controls prev"></a>
-            <a class="controls next"></a>
+            <div class="carousel">
+                <img src="/lib/work/brett.jpg">
+                <img src="/lib/work/brett.jpg">
+                <img src="/lib/work/brett.jpg">
+                <img src="/lib/work/brett.jpg">
+            </div>
+            <a class="controls prev disabled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#282828" stroke="#282828">
+                        <polyline fill="none" stroke="#282828" stroke-miterlimit="10" points="16,1 8,12 16,23 "></polyline>
+                    </g>
+                </svg>
+            </a>
+            <a class="controls next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#282828" stroke="#282828">
+                        <polyline fill="none" stroke="#282828" stroke-miterlimit="10" points="8,1 16,12 8,23 "></polyline>
+                    </g>
+                </svg>
+            </a>
+            <div class="pages">
+                <div class="page active"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+            </div>
         </div>
         <div class="meta">
             <div class="details">
                 <p><b>Category</b>&nbsp;&nbsp;Apparel</p>
                 <p><b>Credit</b>&nbsp;&nbsp;UX Strategy & Design</p>
                 <p><b>Date</b>&nbsp;&nbsp;2020</p>
-                <p class="cta"><a href="" class="colorize">Visit Site&#8599;</a></p>
+                <p class="cta"><a href="" class="colorize">Visit Site<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <title>arrow-top-right</title>
+                    <g stroke-width="1">
+                        <line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.5" y1="1.5"
+                            x2="1.5" y2="14.5"></line>
+                        <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            points="7.5,1.5 14.5,1.5 14.5,8.5 "></polyline>
+                    </g>
+                </svg></a></p>
             </div>
         </div>
     
@@ -134,8 +169,8 @@
     <section class="work rally-hopper">
     
         <div class="copy">
-            <p class="number colorize"><b>PROJECT</b>03/06 &#8595;</p>
-            <h2>Rally Hopper<span class="desc">The racquet-shaped hopper that fits in your tennis bag</span></h2>
+            <!-- <p class="number colorize"><b>PROJECT</b>03/06 &#8595;</p> -->
+            <h2><span class="colorize">Rally Hopper</span> <span class="desc">The racquet-shaped hopper that fits in your tennis bag</span></h2>
         </div>
         <div class="slideshow">
             <a class="controls prev"></a>
@@ -155,8 +190,8 @@
     <section class="work mosaic">
     
         <div class="copy">
-            <p class="number colorize"><b>PROJECT</b>04/06 &#8595;</p>
-            <h2>Mosaic<span class="desc">Celebrating international culture and cuisine in the heart of the gulf coast of Mississippi</span></h2>
+            <!-- <p class="number colorize"><b>PROJECT</b>04/06 &#8595;</p> -->
+            <h2><span class="colorize">Mosaic</span> <span class="desc">Celebrating international culture and cuisine in the heart of the gulf coast of Mississippi</span></h2>
         </div>
         <div class="slideshow">
             <a class="controls prev"></a>
@@ -175,8 +210,8 @@
     <section class="work jabronis">
     
         <div class="copy">
-            <p class="number colorize"><b>PROJECT</b>05/06 &#8595;</p>
-            <h2>Jabroni's Pizza<span class="desc">Introduce Detroit-style pizza to Orange County culture</span></h2>
+            <!-- <p class="number colorize"><b>PROJECT</b>05/06 &#8595;</p> -->
+            <h2><span class="colorize">Jabroni's</span> <span class="desc">Introduce Detroit-style pizza to Orange County culture</span></h2>
         </div>
         <div class="slideshow">
             <a class="controls prev"></a>
@@ -195,8 +230,8 @@
     <section class="work coastline">
     
         <div class="copy">
-            <p class="number colorize"><b>PROJECT</b>06/06 &#8595;</p>
-            <h2>Coastline Academy<span class="desc">A mission to modernize the driving school with a customer-first, technology-centric approach</span></h2>
+            <!-- <p class="number colorize"><b>PROJECT</b>06/06 &#8595;</p> -->
+            <h2><span class="colorize">Coastline</span> <span class="desc">A mission to modernize the driving school with a customer-first, technology-centric approach</span></h2>
         </div>
         <div class="slideshow">
             <a class="controls prev"></a>
@@ -213,6 +248,7 @@
     </section>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="../lib/js/app.js"></script>
 <script src="../lib/js/carousel.js"></script>
 
 </body>

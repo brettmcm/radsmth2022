@@ -1,16 +1,19 @@
-.splash {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
+@import 'core/mixins';
 
-    h1 {
-        font-size: calc(1rem + 5vw);
-        margin:0;
+.hero {
+    padding-top: calc(4em + 10vw);
+    @include fadeIn(0.7s);
+
+    h1, h3, p {
+        max-width: 1000px;
     }
 
+    h3 {
+        margin-top: 2em;
+    }
     p {
-        font-size: calc(1rem + 3vw);
-        margin:0;
-        line-height: 1.3em;
+        line-height: 1.5em;
     }
+        
+
 }

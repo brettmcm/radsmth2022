@@ -141,14 +141,14 @@
     opacity: 0.1; } }
 
 h1, h3 {
-  font-family: maple-web, usual,sans-serif;
+  font-family: maple-web, usual, sans-serif;
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase; }
 
 h1 {
   font-size: 3em;
-  line-height: 0.7em; }
+  line-height: 0.8em; }
 
 h2 {
   font-size: 2em;
@@ -159,15 +159,15 @@ p {
 
 a {
   text-decoration: none;
-  color: #0066ff;
+  color: #df3737;
   transition: color 0.08s;
   white-space: nowrap; }
   a:hover {
-    color: #ff4d4d; }
+    color: #e34d4d; }
   a.invert {
     color: #333333; }
     a.invert:hover {
-      color: #ff4d4d; }
+      color: #e34d4d; }
   a.inline {
     color: inherit;
     text-decoration: underline; }
@@ -176,7 +176,10 @@ html, body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
-  overflow: auto; }
+  overflow-y: auto;
+  touch-action: manipulation; }
+  html.no-scroll, body.no-scroll {
+    overflow-y: hidden; }
 
 html {
   margin: 0;
@@ -186,7 +189,7 @@ html {
   -webkit-user-select: none; }
 
 body {
-  font-family: usual,sans-serif;
+  font-family: usual, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: calc(1em + 0.35vw);
@@ -197,8 +200,7 @@ body {
   display: block; }
 
 .hero {
-  padding: 0 5vw;
-  height: calc(100vh - 4em - 15vw);
+  padding: calc(4em + 15vw) 5vw calc(5em - 5vw) 5vw;
   margin-bottom: 5vw; }
 
 section {
@@ -209,28 +211,113 @@ section {
   .rlb {
     display: none; } }
 header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 5vw;
   height: 2em;
-  pointer-events: all;
+  width: calc(100% - 10vw);
+  pointer-events: none;
   z-index: 999; }
   header .logo {
     font-family: maple-web, usual,sans-serif;
     font-weight: 900;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 2em; }
+    font-size: 2em;
+    height: 0.9em;
+    z-index: 1000;
+    pointer-events: all; }
     header .logo.lite {
       color: white; }
-  header nav {
+  header .hamburger {
+    width: 1.5em;
+    height: 1.25em;
     display: flex;
-    flex-direction: row;
-    font-weight: 800; }
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    z-index: 1000;
+    pointer-events: all; }
+    header .hamburger div {
+      background: #333333;
+      height: 15%;
+      border-radius: 1px;
+      transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1); }
+    header .hamburger.active .top {
+      transform: translateY(120%) rotate(45deg); }
+    header .hamburger.active .bottom {
+      transform: translateY(-120%) rotate(-45deg); }
+    @media screen and (min-width: 600px) {
+      header .hamburger {
+        display: none; } }
+  header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    box-sizing: border-box;
+    padding: 5vw;
+    background: white;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2em;
+    transform: translateY(-10%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.8, 0, 0.2, 1); }
     header nav a {
-      margin-left: 1.5vw; }
+      margin-bottom: 1em;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.8, 0, 0.2, 1), color 0.08s; }
+    header nav.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: all; }
+      header nav.active a {
+        opacity: 1;
+        transform: translateY(0); }
+        header nav.active a:nth-child(1) {
+          transition-delay: 0; }
+        header nav.active a:nth-child(2) {
+          transition-delay: 0.05s; }
+        header nav.active a:nth-child(3) {
+          transition-delay: 0.1s; }
+        header nav.active a:nth-child(4) {
+          transition-delay: 0.15s; }
+    @media screen and (min-width: 600px) {
+      header nav {
+        position: relative;
+        display: flex;
+        width: auto;
+        height: auto;
+        background: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+        font-size: 1em;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all; }
+        header nav a {
+          margin-bottom: 0;
+          margin-left: 1.5vw;
+          transform: translateY(0);
+          opacity: 1; }
+          header nav a:first-child {
+            margin-left: 0; }
+          header nav a.active {
+            text-decoration: line-through;
+            color: #df3737;
+            pointer-events: none; } }
   header .back-to-top {
     display: none;
     position: fixed;

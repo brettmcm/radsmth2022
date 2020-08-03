@@ -1,0 +1,8 @@
+@mixin fadeIn($timing) {
+    animation: fadeIn ease $timing;
+    -webkit-animation: fadeIn ease $timing;
+    -moz-animation: fadeIn ease $timing;
+    -o-animation: fadeIn ease $timing;
+    -ms-animation: fadeIn ease $timing;
+    animation-fill-mode: forwards;
+}

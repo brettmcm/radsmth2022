@@ -21,7 +21,13 @@
   overflow-x: hidden;
   scroll-snap-type: mandatory;
   scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: x mandatory; }
+  scroll-snap-type: x mandatory;
+  animation: fadeIn ease 0.7s;
+  -webkit-animation: fadeIn ease 0.7s;
+  -moz-animation: fadeIn ease 0.7s;
+  -o-animation: fadeIn ease 0.7s;
+  -ms-animation: fadeIn ease 0.7s;
+  animation-fill-mode: forwards; }
   .display img, .display svg {
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
@@ -40,10 +46,16 @@
 
 .arrow-left, .arrow-right {
   position: absolute;
-  bottom: 5vw;
+  bottom: 2em;
   fill: none;
   stroke: #333333;
-  z-index: 2; }
+  z-index: 2;
+  animation: fadeIn ease 1.7s;
+  -webkit-animation: fadeIn ease 1.7s;
+  -moz-animation: fadeIn ease 1.7s;
+  -o-animation: fadeIn ease 1.7s;
+  -ms-animation: fadeIn ease 1.7s;
+  animation-fill-mode: forwards; }
 
 .arrow-left {
   right: calc(5vw + 65px); }
@@ -55,14 +67,16 @@
   .arrow-left, .arrow-right {
     bottom: unset;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    width: calc(1em + 1vw);
+    height: calc(1em + 1vw); }
 
   .arrow-left {
     left: 5vw;
     right: unset; } }
 @media (hover: hover) {
   .arrow-left:hover, .arrow-right:hover {
-    stroke: #ff4d4d;
+    stroke: #e34d4d;
     cursor: pointer; } }
 .info {
   position: absolute;
@@ -72,15 +86,22 @@
   opacity: 0.0;
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
+  animation: fadeIn ease 1.7s;
+  -webkit-animation: fadeIn ease 1.7s;
+  -moz-animation: fadeIn ease 1.7s;
+  -o-animation: fadeIn ease 1.7s;
+  -ms-animation: fadeIn ease 1.7s;
   animation-fill-mode: forwards; }
   .info a {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center; }
     .info a svg {
-      stroke: #0066ff; }
+      stroke: #df3737;
+      transform: translate(2px, 2px); }
     .info a:hover svg {
-      stroke: #ff4d4d; }
+      stroke: #e34d4d; }
 
 .pagination {
   position: absolute;
@@ -93,8 +114,8 @@ body.inverted .arrow-right, body.inverted .arrow-left {
   stroke: white; }
   @media (hover: hover) {
     body.inverted .arrow-right:hover, body.inverted .arrow-left:hover {
-      stroke: #0066ff; } }
+      stroke: #df3737; } }
 body.inverted .info a svg {
   stroke: white; }
 body.inverted .info a:hover svg {
-  stroke: #0066ff; }
+  stroke: #df3737; }

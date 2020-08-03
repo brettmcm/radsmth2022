@@ -1,4 +1,5 @@
 @import '../core/color';
+@import 'core/mixins';
 
 
 @keyframes fadeIn {
@@ -29,6 +30,8 @@
     scroll-snap-points-x: repeat(300px);
     scroll-snap-type: x mandatory;
     // scroll-behavior: smooth;
+
+    @include fadeIn(0.7s);
     img, svg {
         height: calc(var(--vh, 1vh) * 100);
         width: 100vw;
@@ -51,10 +54,11 @@
 
 .arrow-left, .arrow-right {
     position: absolute;
-    bottom: 5vw;
+    bottom: 2em;
     fill: none;
     stroke: $foreground;
     z-index:2;
+    @include fadeIn(1.7s);
 }
 
 .arrow-left{ right: calc(5vw + 65px); }
@@ -65,6 +69,8 @@
         bottom: unset;
         top: 50%;
         transform: translateY(-50%);
+        width: calc(1em + 1vw);
+        height: calc(1em + 1vw);
     }
     .arrow-left {
         left: 5vw;
@@ -90,12 +96,14 @@
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
     animation-fill-mode: forwards;
+    @include fadeIn(1.7s);
     a { 
         display: inline-flex;
         justify-content: flex-start;
         align-items: center;
         svg {
             stroke: $primary;
+            transform: translate(2px, 2px);
         }
         &:hover {
             svg { stroke: $primary-hover; }

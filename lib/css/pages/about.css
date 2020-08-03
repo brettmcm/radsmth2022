@@ -1,38 +1,57 @@
-img.portrait {
-  width: 100%;
-  height: 100vw;
-  max-height: 45vh;
-  border-radius: 2px;
-  object-fit: cover;
-  object-position: 50% 40%;
-  opacity: 0;
-  animation: fadeIn ease 0.7s;
-  -webkit-animation: fadeIn ease 0.7s;
-  -moz-animation: fadeIn ease 0.7s;
-  -o-animation: fadeIn ease 0.7s;
-  -ms-animation: fadeIn ease 0.7s;
-  animation-fill-mode: forwards; }
-
-main {
-  box-sizing: border-box;
-  width: 100%;
-  opacity: 0;
-  animation: fadeIn ease 1.7s;
-  -webkit-animation: fadeIn ease 1.7s;
-  -moz-animation: fadeIn ease 1.7s;
-  -o-animation: fadeIn ease 1.7s;
-  -ms-animation: fadeIn ease 1.7s;
-  animation-fill-mode: forwards; }
-
-@media only screen and (min-width: 1000px) {
-  main {
-    padding: 3vw 8vw;
-    max-height: 100vh;
-    overflow-y: scroll; }
-
-  img.portrait {
-    margin: 0;
-    height: 100%;
-    width: 48vw;
-    max-height: none;
-    /* max-width: 900px; */ } }
+.hero {
+  padding-top: calc(4em + 10vw);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+  .hero img.portrait {
+    width: 100%;
+    height: 100vw;
+    max-height: 45vh;
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: 15% 0%;
+    opacity: 0;
+    animation: fadeIn ease 1.7s;
+    -webkit-animation: fadeIn ease 1.7s;
+    -moz-animation: fadeIn ease 1.7s;
+    -o-animation: fadeIn ease 1.7s;
+    -ms-animation: fadeIn ease 1.7s;
+    animation-fill-mode: forwards; }
+  .hero main {
+    box-sizing: border-box;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn ease 0.7s;
+    -webkit-animation: fadeIn ease 0.7s;
+    -moz-animation: fadeIn ease 0.7s;
+    -o-animation: fadeIn ease 0.7s;
+    -ms-animation: fadeIn ease 0.7s;
+    animation-fill-mode: forwards; }
+    .hero main h3 {
+      margin-top: 2em; }
+    .hero main ul, .hero main li {
+      list-style: none;
+      padding: 0; }
+    .hero main ul {
+      column-count: 2;
+      line-height: 1.5em; }
+    .hero main p {
+      line-height: 1.5em; }
+      .hero main p.list {
+        column-count: 2; }
+  @media only screen and (min-width: 1000px) {
+    .hero {
+      flex-direction: row; }
+      .hero main {
+        padding-right: 5vw; }
+      .hero img.portrait {
+        margin: 0;
+        height: 48vw;
+        width: 48vw;
+        max-height: 60vh;
+        /* max-width: 900px; */ } }
+  @media only screen and (min-width: 1440px) {
+    .hero main ul {
+      column-count: 3; }
+    .hero main p.list {
+      column-count: 3; } }

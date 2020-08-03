@@ -1,7 +1,13 @@
 .splash {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  animation: fadeIn ease 0.7s;
+  -webkit-animation: fadeIn ease 0.7s;
+  -moz-animation: fadeIn ease 0.7s;
+  -o-animation: fadeIn ease 0.7s;
+  -ms-animation: fadeIn ease 0.7s;
+  animation-fill-mode: forwards; }
   .splash h1 {
     font-size: calc(1.5rem + 5vw);
     margin: 0; }
@@ -28,7 +34,13 @@ section.work {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  animation: fadeIn ease 1.7s;
+  -webkit-animation: fadeIn ease 1.7s;
+  -moz-animation: fadeIn ease 1.7s;
+  -o-animation: fadeIn ease 1.7s;
+  -ms-animation: fadeIn ease 1.7s;
+  animation-fill-mode: forwards; }
   section.work .copy {
     max-width: 1100px; }
     section.work .copy p.number {
@@ -44,8 +56,7 @@ section.work {
         font-family: usual,sans-serif;
         font-weight: 300;
         font-size: 0.9em;
-        text-transform: none;
-        margin-left: 0.5em; }
+        text-transform: none; }
   section.work .slideshow {
     position: relative;
     width: 100%;
@@ -61,10 +72,10 @@ section.work {
       display: flex;
       flex-direction: row;
       overflow-x: auto;
-      overflow-y: hidden; }
-      section.work .slideshow .carousel.scrollsnap {
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth; }
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch; }
       section.work .slideshow .carousel::-webkit-scrollbar {
         display: none; }
       section.work .slideshow .carousel img {
@@ -74,7 +85,7 @@ section.work {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        scroll-snap-align: center;
+        scroll-snap-align: start;
         scroll-snap-stop: always;
         pointer-events: none; }
     section.work .slideshow .controls {
@@ -159,6 +170,8 @@ section.work {
       color: #5fa7d0; }
     section.work.vuori a:hover {
       color: #6dbbe7; }
+    section.work.vuori .meta .details .cta svg {
+      stroke: #5fa7d0; }
   section.work.rally-hopper {
     background: #161717;
     color: white; }

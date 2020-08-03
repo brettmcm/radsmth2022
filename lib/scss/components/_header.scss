@@ -1,12 +1,13 @@
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5vw;
     height: 2em;
-
-        pointer-events: all;
+    width: calc(100% - 10vw);
+    pointer-events: none;
     z-index:999;
 
     .logo {
@@ -15,17 +16,115 @@ header {
         font-style: normal;
         text-transform: uppercase;
         font-size:2em;
+        height: 0.9em;
+        z-index: 1000;
+        pointer-events: all;
         &.lite {
             color: $background;
         }
     }
 
-    nav {
+    .hamburger {
+        width: 1.5em;
+        height: 1.25em;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        z-index:1000;
+        pointer-events: all;
+
+        div {
+            background: $foreground;
+            height: 15%;
+            border-radius: 1px;
+            transition: transform 0.4s cubic-bezier(.8,0,.2,1);
+        }
+
+        &.active {
+            .top {
+                transform: translateY(120%) rotate(45deg);
+            }
+            .bottom {
+                transform: translateY(-120%) rotate(-45deg);
+            }
+        }
+
+         @media screen and (min-width: 600px) {
+            display: none;
+         }
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(var(--vh, 1vh) * 100);
+        box-sizing: border-box;
+        padding: 5vw;
+        background: white;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-weight: 800;
-        a {
-            margin-left: 1.5vw;
+        font-size:2em;
+
+        transform: translateY(-10%);
+        opacity:0;
+        pointer-events: none;
+        transition: transform 0.4s cubic-bezier(.8,0,.2,1), opacity 0.4s cubic-bezier(.8,0,.2,1);
+
+        a { 
+            margin-bottom: 1em;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: transform 0.4s cubic-bezier(.8,0,.2,1), opacity 0.4s cubic-bezier(.8,0,.2,1), color 0.08s;
+        }
+        
+        &.active {
+            transform: translateY(0);
+            opacity:1;
+            pointer-events: all;
+            a {
+                opacity: 1;
+                transform: translateY(0);
+                &:nth-child(1) { transition-delay: 0; }
+                &:nth-child(2) { transition-delay: 0.05s; }
+                &:nth-child(3) { transition-delay: 0.1s; }
+                &:nth-child(4) { transition-delay: 0.15s; }
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            position: relative;
+            display: flex;
+            width: auto;
+            height: auto;
+            background: none;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 0;
+            font-size: 1em;
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+            a {
+                margin-bottom: 0;
+                margin-left: 1.5vw;
+                transform: translateY(0);
+                opacity: 1;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &.active {
+                    text-decoration: line-through;
+                    color: $primary;
+                    pointer-events: none;
+                }
+            }
         }
     }
 
