@@ -1,6 +1,8 @@
 html, body {
     min-height: calc((var(--vh, 1vh) * 100) - 10vw);
-    user-select: none;  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 body {

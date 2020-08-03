@@ -1,14 +1,14 @@
-h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em; }
-  h2 span {
-    display: block; }
-
-.social {
-  padding-top: 1em; }
-  .social a {
-    margin-right: 0.5em; }
-    .social a svg {
-      fill: #333333; }
-    .social a:hover svg {
-      fill: magenta; }
+.hero {
+  padding-top: calc(4em + 10vw);
+  animation: fadeIn ease 0.7s;
+  -webkit-animation: fadeIn ease 0.7s;
+  -moz-animation: fadeIn ease 0.7s;
+  -o-animation: fadeIn ease 0.7s;
+  -ms-animation: fadeIn ease 0.7s;
+  animation-fill-mode: forwards; }
+  .hero h1, .hero h3, .hero p {
+    max-width: 1000px; }
+  .hero h3 {
+    margin-top: 2em; }
+  .hero p {
+    line-height: 1.5em; }

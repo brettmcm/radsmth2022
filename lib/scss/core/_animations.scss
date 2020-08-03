@@ -1,0 +1,68 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes bounce {
+    0% { 
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    100% { 
+        transform: translateY(0.25em);
+        opacity: 1;
+    }
+}
+
+
+@keyframes cycle1 {
+   0%  { } /* When you start the slide, the first image is already visible */
+   4%  { } /* Original Position */
+   16% { opacity: 1; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { opacity: 0.1; } /* From 16% to 20% = for 1 second exit image */
+   21% { opacity: 0.1; } /* Return to Original Position */
+   92% { opacity: 0.1; }
+   96% { opacity: 0.1; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ top: 0px; opacity: 1; }
+}
+
+@keyframes cycle2 {
+   0%  { opacity: 0.1; } /* Original Position */
+   16% { opacity: 0.1; }/* Starts moving after 16% to this position */
+   20% { opacity: 1; }
+   24% { opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { opacity: 1; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { opacity: 0.1; } /* From 36% to 40% = for 1 second exit image */
+   41% { opacity: 0.1; }   /* Return to Original Position */
+   100%{ opacity: 0.1; }
+}
+
+@keyframes cycle3 {
+   0%  { opacity: 0.1; }
+   36% { opacity: 0.1; }
+   40% { opacity: 1; }
+   44% { opacity: 1; }
+   56% { opacity: 1; }
+   60% { opacity: 0.1; }
+   61% { opacity: 0.1; }
+   100%{ opacity: 0.1; }
+}
+
+@keyframes cycle4 {
+   0%  { opacity: 0.1; }
+   56% { opacity: 0.1; }
+   60% { opacity: 1; }
+   64% { opacity: 1; }
+   76% { opacity: 1; }
+   80% { opacity: 0.1; }
+   81% { opacity: 0.1; }
+   100%{ opacity: 0.1; }
+}
+@keyframes cycle5 {
+   0%  { opacity: 0.1; }
+   76% { opacity: 0.1; }
+   80% { opacity: 1; }
+   84% { opacity: 1; }
+   96% { opacity: 1; }
+   100%{ opacity: 0.1; }
+}
