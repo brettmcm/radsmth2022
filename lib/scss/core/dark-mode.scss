@@ -1,0 +1,51 @@
+@import 'core/variables';
+
+@media screen and (prefers-color-scheme: dark) {
+    body, header {
+        background: $black;
+        color: $background;
+        &.transparent:after {
+            background: $black;
+        }
+    }
+    header {
+        .hamburger {
+            div { background: $background;}
+        }
+    }
+    a {
+        &.invert {
+            color: $background;
+        }
+        &.route {
+            .arrow {
+                background: $background;
+                &:after {
+                    border-right-color: $background;
+                    border-top-color: $background;
+                }
+            }
+        }
+    }
+    .services {
+        background: rgba($foreground, 0.2);
+        ul {
+            li {
+                h3 {
+                    svg {
+                        fill: $background;
+                    }
+                }
+            }
+        }
+    }
+    .logos {
+        #display-target {
+            div {
+                img {
+                    filter: brightness(0%) invert(1);
+                }
+            }
+        }
+    }
+}

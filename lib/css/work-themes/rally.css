@@ -1,0 +1,12 @@
+body.rally h1 .eyebrow, body.rally h2 .eyebrow {
+  color: #6e36c9; }
+body.rally header nav a:after {
+  background: #8d53eb; }
+body.rally a.invert:hover {
+  color: #8d53eb; }
+body.rally a.route {
+  color: #6e36c9; }
+  body.rally a.route:after {
+    background: #8d53eb; }
+  body.rally a.route:hover {
+    color: #8d53eb; }

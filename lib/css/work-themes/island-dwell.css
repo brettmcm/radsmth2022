@@ -1,0 +1,12 @@
+body.island-dwell h1 .eyebrow, body.island-dwell h2 .eyebrow {
+  color: #fe705c; }
+body.island-dwell header nav a:after {
+  background: #ff8b7c; }
+body.island-dwell a.invert:hover {
+  color: #ff8b7c; }
+body.island-dwell a.route {
+  color: #fe705c; }
+  body.island-dwell a.route:after {
+    background: #ff8b7c; }
+  body.island-dwell a.route:hover {
+    color: #ff8b7c; }

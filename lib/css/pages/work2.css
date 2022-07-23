@@ -1,0 +1,21 @@
+section.masthead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  margin: calc(5vh + 10vw) 5% 5vw 5%; }
+
+section.work-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5%;
+  justify-content: center;
+  align-items: center;
+  min-height: 0; }
+  section.work-row img {
+    display: inline;
+    width: 70%; }
+  section.work-row .details {
+    width: 30%;
+    text-align: center; }

@@ -1,19 +1,36 @@
 @import 'core/mixins';
+@import 'core/variables';
 
-.hero {
-    padding-top: calc(4em + 10vw);
-    @include fadeIn(0.7s);
-
-    h1, h3, p {
-        max-width: 1000px;
+section {
+    position: relative;
+    &.incoming {
+        display: inline-block;
+        overflow: hidden;
+        .message {
+            display: inline-block;
+            z-index: 4000;
+            font-size: 2em;
+            font-weight: 700;
+            line-height: 3em;
+            padding: 0 1.25em 0.15em 1.25em;
+            border-radius: 4vw;
+            background: rgba($foreground, 0.05);
+            @include messageIn(0.7s);
+        }
     }
-
-    h3 {
-        margin-top: 2em;
+    &.outgoing {
+        display: inline-block;
+        text-align: right;
+        .message {
+            display: inline-block;
+            font-size: 2em;
+            font-weight: 700;
+            line-height: 3em;
+            padding: 0 1.25em 0.15em 1.25em;
+            border-radius: 4vw;
+            background: $primary;
+            color: $background;
+            @include messageIn(0.7s);
+        }
     }
-    p {
-        line-height: 1.5em;
-    }
-        
-
 }

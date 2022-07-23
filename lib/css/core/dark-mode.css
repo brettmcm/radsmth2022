@@ -1,0 +1,25 @@
+@media screen and (prefers-color-scheme: dark) {
+  body, header {
+    background: #111111;
+    color: #eff3f5; }
+    body.transparent:after, header.transparent:after {
+      background: #111111; }
+
+  header .hamburger div {
+    background: #eff3f5; }
+
+  a.invert {
+    color: #eff3f5; }
+  a.route .arrow {
+    background: #eff3f5; }
+    a.route .arrow:after {
+      border-right-color: #eff3f5;
+      border-top-color: #eff3f5; }
+
+  .services {
+    background: rgba(51, 51, 51, 0.2); }
+    .services ul li h3 svg {
+      fill: #eff3f5; }
+
+  .logos #display-target div img {
+    filter: brightness(0%) invert(1); } }

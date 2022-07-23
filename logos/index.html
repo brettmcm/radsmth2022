@@ -9,9 +9,10 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" /> 
 
-    <link rel="stylesheet" href="https://use.typekit.net/heb5kxr.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kpx2owl.css">
     <link rel="stylesheet" href="../lib/css/app.css">
-    <link rel="stylesheet" href="../lib/css/pages/work.css">
+    <link rel="stylesheet" href="../lib/css/pages/logos.css">
+    <link rel="stylesheet" href="../lib/css/core/dark-mode.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <div class="bottom"></div>
     </div>
     <nav class="nav">
-            <a href="/" class="invert">Home</a>
+        <a href="/work" class="invert">Work</a>
         <a href="/logos" class="invert active">Logos</a>
         <a href="/about" class="invert">About</a>
         <a href="/contact" class="invert">Contact</a>
@@ -35,16 +36,29 @@
     </svg>
 </header>
 
-<section class="display" id="work-carousel"></section>
+<main>
+    <section class="intro">
+        <h1>
+            <div class="eyebrow">Logos</div>Our favorite marks from the studio
+        </h1>
+            <p class="callout">Client selections and alternates</p>
+    </section>
+
+    <section class="logos flush">
+        <div id="display-target"></div>
+    </section>
+</main>
+
+<!-- <section class="display" id="work-carousel"></section>
 
 <svg id="prev" class="arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#282828" stroke="#282828">
-        <polyline fill="none" stroke="#282828" stroke-miterlimit="10" points="16,1 8,12 16,23 "></polyline>
+    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <polyline fill="none" stroke-miterlimit="10" points="16,1 8,12 16,23 "></polyline>
     </g>
 </svg>
 <svg id="next" class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="#282828" stroke="#282828">
-        <polyline fill="none" stroke="#282828" stroke-miterlimit="10" points="8,1 16,12 8,23 "></polyline>
+    <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <polyline fill="none" stroke-miterlimit="10" points="8,1 16,12 8,23 "></polyline>
     </g>
 </svg>
 
@@ -52,7 +66,7 @@
 <div class="info">
     <b><span id="project-title-display"></span></b><br>
     <a id="project-detail-link" class="inverted underline thin" href="" target="_new">More Details<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>arrow-top-right</title><g stroke-width="1"><line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.5" y1="1.5" x2="1.5" y2="14.5"></line> <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="7.5,1.5 14.5,1.5 14.5,8.5 "></polyline></g></svg></a>
-</div>
+</div> -->
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -60,7 +74,7 @@
 <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
 <script src="../lib/js/app.js"></script>
-<script src="../lib/js/branding-carousel.js"></script>
+<script src="../lib/js/logos.js"></script>
 
 </body>
 

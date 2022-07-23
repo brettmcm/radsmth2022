@@ -1,8 +1,32 @@
 @mixin fadeIn($timing) {
+    opacity: 0;
     animation: fadeIn ease $timing;
     -webkit-animation: fadeIn ease $timing;
     -moz-animation: fadeIn ease $timing;
     -o-animation: fadeIn ease $timing;
     -ms-animation: fadeIn ease $timing;
+    animation-fill-mode: forwards;
+}
+
+@mixin fadeInFocus($timing) {
+    opacity: 0;
+    animation: fadeInFocus ease $timing;
+    -webkit-animation: fadeInFocus ease $timing;
+    -moz-animation: fadeInFocus ease $timing;
+    -o-animation: fadeInFocus ease $timing;
+    -ms-animation: fadeInFocus ease $timing;
+    animation-fill-mode: forwards;
+    filter: blur(100px);
+    transform: scale(1.15);
+}
+
+@mixin messageIn($timing) {
+    opacity: 0;
+    transform: translateY(0.5em);
+    animation: messageIn ease $timing;
+    -webkit-animation: messageIn ease $timing;
+    -moz-animation: messageIn ease $timing;
+    -o-animation: messageIn ease $timing;
+    -ms-animation: messageIn ease $timing;
     animation-fill-mode: forwards;
 }

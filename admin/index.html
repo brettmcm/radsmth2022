@@ -16,20 +16,26 @@
 <body>
 
     <header>
-        <a href="/" class="name inverted">Radsmth&mdash;<br><span class="faded">Admin Mode</span></a>
-        <a href="#" id="save-button" class="">Save</a>
+        <a href="/" class="logo invert">R—</a>
+        <div class="hamburger" id="hamburger">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <nav class="nav">
+            <a href="#" id="save-button" class="">Save</a>
+        </nav>
     </header>
 
-    <h2>&mdash;<br>Work</h2>
-
-    <div id="work-list"></div>
+    <main>
+        <div id="work-list"></div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-    <script src="../lib/js/app.js"></script>
+    <!-- <script src="../lib/js/app.js"></script> -->
     <script src="../lib/js/admin.js"></script>
 
 </body>
