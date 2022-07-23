@@ -66,6 +66,8 @@ img {
     img, svg {
         width: 100%;
         fill: $primary;
+        max-height: 50vh;
+        object-fit: cover;
         @include fadeInFocus(2s);
     }
 }

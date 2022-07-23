@@ -340,6 +340,8 @@ img {
   .marquee img, .marquee svg {
     width: 100%;
     fill: #ff5757;
+    max-height: 50vh;
+    object-fit: cover;
     opacity: 0;
     animation: fadeInFocus ease 2s;
     -webkit-animation: fadeInFocus ease 2s;
@@ -716,17 +718,17 @@ body.islanddwell {
   color: #11c48e; }
 
 body.island-dwell h1 .eyebrow, body.island-dwell h2 .eyebrow {
-  color: #fe705c; }
+  color: #34e592; }
 body.island-dwell header nav a:after {
-  background: #ff8b7c; }
+  background: #78e4b2; }
 body.island-dwell a.invert:hover {
-  color: #ff8b7c; }
+  color: #78e4b2; }
 body.island-dwell a.route {
-  color: #fe705c; }
+  color: #34e592; }
   body.island-dwell a.route:after {
-    background: #ff8b7c; }
+    background: #78e4b2; }
   body.island-dwell a.route:hover {
-    color: #ff8b7c; }
+    color: #78e4b2; }
 
 body.rally h1 .eyebrow, body.rally h2 .eyebrow {
   color: #6e36c9; }
@@ -740,3 +742,16 @@ body.rally a.route {
     background: #8d53eb; }
   body.rally a.route:hover {
     color: #8d53eb; }
+
+body.apeak h1 .eyebrow, body.apeak h2 .eyebrow {
+  color: #6298ae; }
+body.apeak header nav a:after {
+  background: #7fb8cf; }
+body.apeak a.invert:hover {
+  color: #7fb8cf; }
+body.apeak a.route {
+  color: #6298ae; }
+  body.apeak a.route:after {
+    background: #7fb8cf; }
+  body.apeak a.route:hover {
+    color: #7fb8cf; }
