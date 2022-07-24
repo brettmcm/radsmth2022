@@ -186,10 +186,13 @@ h3, main section.aside aside {
   margin: 0; }
 
 h4 {
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing: -0.02em;
   font-weight: 700;
   margin: 0; }
+
+span.dim {
+  opacity: 0.6; }
 
 h1 .eyebrow, h2 .eyebrow {
   display: block;
@@ -204,16 +207,18 @@ h1 .gradient, h2 .gradient {
   -webkit-text-fill-color: transparent; }
 
 p {
-  font-family: chaparral-pro, serif;
   line-height: 1.2em;
   font-weight: 400;
   width: 100%;
   margin: 0; }
   p.lead {
-    font-size: 1.2em;
+    font-size: 1.25em;
     margin: 1em 0; }
   p.small {
     font-size: 0.9em; }
+  p.tag {
+    font-size: 0.7em;
+    opacity: 0.7; }
   p.callout {
     font-style: italic; }
 
@@ -394,47 +399,6 @@ main {
       main section.aside aside {
         width: 30%;
         margin: 0.5em 0 2em 0; }
-    main section.work-highlight {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 5vw; }
-      main section.work-highlight .cover {
-        position: relative;
-        width: 100%; }
-        main section.work-highlight .cover img {
-          width: 100%;
-          transition: transform 1s, box-shadow 1s;
-          margin: 0; }
-      main section.work-highlight .desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 1vw 0; }
-        main section.work-highlight .desc .primary {
-          flex: 1;
-          margin-bottom: 1em; }
-          main section.work-highlight .desc .primary p {
-            font-size: 1.5em;
-            font-weight: 700;
-            margin: 0;
-            width: 100%; }
-          main section.work-highlight .desc .primary a.route {
-            font-size: 0.75em; }
-      main section.work-highlight:hover .cover img {
-        transform: scale(1.01) translateY(0px);
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1), 0 15px 15px rgba(0, 0, 0, 0.1), 0 25px 25px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(0, 0, 0, 0.1); }
-      main section.work-highlight:hover .desc a .arrow {
-        opacity: 0;
-        width: 0; }
-      main section.work-highlight:hover .desc a:after {
-        width: 100%; }
-      @media screen and (min-width: 900px) {
-        main section.work-highlight .desc {
-          flex-direction: row; } }
     main section.aside aside {
       margin: 0 0 0.5em 0; }
     main section.aside div p {
@@ -675,6 +639,42 @@ footer {
   footer .social {
     margin-right: 5vw;
     pointer-events: all; }
+
+.carousel {
+  margin: calc(1rem + 5vw) 0; }
+  .carousel .scrollview {
+    margin: 1rem -5vw;
+    width: 100vw;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory; }
+    .carousel .scrollview::-webkit-scrollbar {
+      display: none; }
+    .carousel .scrollview .scrollitem {
+      display: inline-block;
+      padding: 0 0 0 5vw;
+      scroll-snap-align: start;
+      width: 80vw;
+      height: 45vh; }
+      .carousel .scrollview .scrollitem:last-child {
+        margin-right: 5vw; }
+    .carousel .scrollview a.card {
+      background: white;
+      padding: 5vw;
+      display: inline-block;
+      width: 70vw;
+      height: 40vh;
+      border-radius: 0.75rem;
+      background-position: bottom center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .carousel .scrollview a.card.island-dwell, .carousel .scrollview a.card.apeak {
+        background-color: white; }
+      .carousel .scrollview a.card.rally {
+        background-color: #1c212e;
+        color: #eff3f5; }
 
 .intro h1 {
   position: relative; }
