@@ -5,18 +5,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 1.5rem calc(50vw - (600px + 5vw)) 10vw;
+    padding: 1.5rem;
     width: 100vw;
     pointer-events: none;
     z-index: 999;
     font-size: 1.25rem;
 
-    .copyright {
-        margin-left: 5vw;
-    }
-
     .social {
-        margin-right: 5vw;
         pointer-events: all;
     }
 }

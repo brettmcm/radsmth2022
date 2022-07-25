@@ -171,13 +171,15 @@ h1 {
   line-height: 1.1em;
   letter-spacing: -0.04em;
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  max-width: 1440px; }
 
 h2 {
   font-size: 2em;
   letter-spacing: -0.03em;
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  max-width: 1440px; }
 
 h3, main section.aside aside {
   font-size: 1.5em;
@@ -210,7 +212,8 @@ p {
   line-height: 1.2em;
   font-weight: 400;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  max-width: 1200px; }
   p.lead {
     font-size: 1.25em;
     margin: 1em 0; }
@@ -365,6 +368,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   opacity: 0;
   animation: fadeIn ease 0.7s;
   -webkit-animation: fadeIn ease 0.7s;
@@ -381,8 +385,8 @@ main {
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
-    width: calc(100% - 10vw);
-    max-width: 1200px; }
+    width: 100%;
+    padding: 0 1.5rem; }
     main section.full {
       max-width: none; }
     main section.flush {
@@ -390,7 +394,7 @@ main {
       max-width: none; }
     main section.intro {
       align-items: flex-start;
-      margin: 8vw 0; }
+      margin: 2vw 0 calc(2rem + 5vw) 0; }
       main section.intro .tags {
         margin: 1em 0; }
     main section.aside {
@@ -399,12 +403,34 @@ main {
       main section.aside aside {
         width: 30%;
         margin: 0.5em 0 2em 0; }
+    main section.work-highlight {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: calc(1rem + 5vw) 0; }
+      main section.work-highlight img.cover {
+        width: 100%;
+        transition: transform 1s, box-shadow 1s, filter 1s;
+        margin: 0;
+        aspect-ratio: 1.4;
+        object-fit: cover; }
+      main section.work-highlight h3, main section.work-highlight section.aside aside, main section.aside section.work-highlight aside {
+        transition: transform 1s; }
+      main section.work-highlight:hover img.cover {
+        transform: scale(1.01) translateY(0px);
+        filter: contrast(0.8);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1), 0 15px 15px rgba(0, 0, 0, 0.1), 0 25px 25px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(0, 0, 0, 0.1); }
+      main section.work-highlight:hover h3, main section.work-highlight:hover section.aside aside, main section.aside section.work-highlight:hover aside {
+        transform: translateY(4px); }
+      @media only screen and (min-width: 1000px) {
+        main section.work-highlight img.cover {
+          aspect-ratio: initial; } }
     main section.aside aside {
       margin: 0 0 0.5em 0; }
     main section.aside div p {
       margin-bottom: 1em; }
   main img {
-    max-width: 1440px;
+    max-width: calc(100vw - 3rem);
     margin: 1vw 0 2vw 0; }
     main img.single {
       width: 100%;
@@ -419,20 +445,25 @@ main {
       main img.hero, main img.single {
         border-radius: 0; } }
   main blockquote {
-    width: calc(100% - 10vw);
-    max-width: 1200px;
+    width: 100vw;
     position: relative;
+    box-sizing: border-box;
     font-size: 2.25em;
     text-align: center;
     font-family: chaparral-pro, serif;
     font-style: italic;
-    margin: 5vw 0; }
+    margin: 5vw 0;
+    background: rgba(51, 51, 51, 0.04);
+    padding: 6rem; }
     main blockquote .source {
       font-family: aktiv-grotesk, helvetica, arial, sans-serif;
       display: block;
       font-size: 0.3em;
       margin-top: 1em;
       font-style: normal; }
+    @media screen and (prefers-color-scheme: dark) {
+      main blockquote {
+        background: rgba(51, 51, 51, 0.2); } }
   main ul {
     display: flex;
     flex-direction: column;
@@ -458,9 +489,9 @@ main {
   main section.aside {
     flex-direction: row; }
     main section.aside aside {
-      width: 20%; }
+      width: 15%; }
     main section.aside div, main section.aside p {
-      width: 75%; }
+      width: 80%; }
       main section.aside div p, main section.aside p p {
         width: 100%; }
   main ul {
@@ -472,7 +503,7 @@ header {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 1.5rem calc(50vw - (600px + 5vw));
+  padding: 1.5rem;
   width: 100vw;
   pointer-events: none;
   z-index: 999;
@@ -498,7 +529,6 @@ header {
     z-index: 1000;
     pointer-events: all;
     letter-spacing: -0.1em;
-    margin-left: 5vw;
     transition: color 0.2s cubic-bezier(0.8, 0, 0.2, 1); }
     header .logo.active {
       color: #eff3f5;
@@ -506,7 +536,6 @@ header {
   header .hamburger {
     width: 1.5rem;
     height: 1.25rem;
-    margin-right: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -587,8 +616,7 @@ header {
         padding: 0;
         transform: translateY(0);
         opacity: 1;
-        pointer-events: all;
-        margin-right: 5vw; }
+        pointer-events: all; }
         header nav a {
           font-size: inherit;
           margin-bottom: 0;
@@ -629,52 +657,13 @@ footer {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 1.5rem calc(50vw - (600px + 5vw)) 10vw;
+  padding: 1.5rem;
   width: 100vw;
   pointer-events: none;
   z-index: 999;
   font-size: 1.25rem; }
-  footer .copyright {
-    margin-left: 5vw; }
   footer .social {
-    margin-right: 5vw;
     pointer-events: all; }
-
-.carousel {
-  margin: calc(1rem + 5vw) 0; }
-  .carousel .scrollview {
-    margin: 1rem -5vw;
-    width: 100vw;
-    white-space: nowrap;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory; }
-    .carousel .scrollview::-webkit-scrollbar {
-      display: none; }
-    .carousel .scrollview .scrollitem {
-      display: inline-block;
-      padding: 0 0 0 5vw;
-      scroll-snap-align: start;
-      width: 80vw;
-      height: 45vh; }
-      .carousel .scrollview .scrollitem:last-child {
-        margin-right: 5vw; }
-    .carousel .scrollview a.card {
-      background: white;
-      padding: 5vw;
-      display: inline-block;
-      width: 70vw;
-      height: 40vh;
-      border-radius: 0.75rem;
-      background-position: bottom center;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      .carousel .scrollview a.card.island-dwell, .carousel .scrollview a.card.apeak {
-        background-color: white; }
-      .carousel .scrollview a.card.rally {
-        background-color: #1c212e;
-        color: #eff3f5; }
 
 .intro h1 {
   position: relative; }
@@ -683,33 +672,6 @@ footer {
     width: 5.15em;
     top: -1em;
     left: -0.15em; }
-
-.services {
-  display: flex;
-  align-items: center;
-  background: rgba(51, 51, 51, 0.04);
-  padding: 10vw 5vw; }
-  .services > * {
-    width: 100%;
-    max-width: 1200px; }
-  .services ul {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%; }
-    .services ul li {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 0; }
-      .services ul li h3, .services ul li main section.aside aside, main section.aside .services ul li aside {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 0.5em; }
-        .services ul li h3 svg, .services ul li main section.aside aside svg, main section.aside .services ul li aside svg {
-          width: calc(2em + 1vw);
-          margin: 0 0 1em -10px;
-          fill: #333333; }
 
 .service-triangle {
   position: relative;

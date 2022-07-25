@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
     // background: rgba($foreground, 0.04);
-    padding: 0 5vw;
+    padding: 0 1.5rem;
     & > * {
         width: 100%;
-        max-width: 2000px;
+        // max-width: 2000px;
     }
     #display-target {
         display: inline;
@@ -33,7 +33,17 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 620px) {
+    .logos {
+        #display-target {
+            div {
+                width: calc(100% / 2);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 980px) {
     .logos {
         #display-target {
             div {
@@ -43,7 +53,17 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
+    .logos {
+        #display-target {
+            div {
+                width: calc(100% / 4);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2000px) {
     .logos {
         #display-target {
             div {

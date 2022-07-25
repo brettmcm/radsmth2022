@@ -6,33 +6,6 @@
     top: -1em;
     left: -0.15em; }
 
-.services {
-  display: flex;
-  align-items: center;
-  background: rgba(51, 51, 51, 0.04);
-  padding: 10vw 5vw; }
-  .services > * {
-    width: 100%;
-    max-width: 1200px; }
-  .services ul {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%; }
-    .services ul li {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 0; }
-      .services ul li h3 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 0.5em; }
-        .services ul li h3 svg {
-          width: calc(2em + 1vw);
-          margin: 0 0 1em -10px;
-          fill: #333333; }
-
 .service-triangle {
   position: relative;
   width: 40vw;

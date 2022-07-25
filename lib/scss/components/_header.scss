@@ -5,7 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 1.5rem calc(50vw - (600px + 5vw));
+    padding: 1.5rem;
     width: 100vw;
     pointer-events: none;
     z-index:999;
@@ -36,7 +36,6 @@ header {
         z-index: 1000;
         pointer-events: all;
         letter-spacing: -0.1em;
-        margin-left: 5vw;
         transition: color 0.2s cubic-bezier(.8,0,.2,1);
         &.active {
             color: $background;
@@ -47,7 +46,6 @@ header {
     .hamburger {
         width: 1.5rem;
         height: 1.25rem;
-        margin-right: 5vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -143,7 +141,6 @@ header {
             transform: translateY(0);
             opacity: 1;
             pointer-events: all;
-            margin-right: 5vw;
             a {
                 font-size: inherit;
                 margin-bottom: 0;
