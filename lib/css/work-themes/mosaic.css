@@ -1,0 +1,12 @@
+body.mosaic h1 .eyebrow, body.mosaic h2 .eyebrow {
+  color: #515449; }
+body.mosaic header nav a:after {
+  background: #676b5e; }
+body.mosaic a.invert:hover {
+  color: #676b5e; }
+body.mosaic a.route {
+  color: #515449; }
+  body.mosaic a.route:after {
+    background: #676b5e; }
+  body.mosaic a.route:hover {
+    color: #676b5e; }

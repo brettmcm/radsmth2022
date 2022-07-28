@@ -1,0 +1,37 @@
+body.mosaic {
+    $primary: #515449;
+    $primary-hover: #676b5e;
+    h1, h2 {
+        .eyebrow {
+            color: $primary;
+        }
+    }
+
+    header {
+        nav {
+            a {
+                &:after {
+                    background: $primary-hover;
+                }
+            }
+        }
+    }
+
+    a {
+        &.invert {
+            &:hover {
+                color: $primary-hover;
+            }
+        }
+        &.route {
+            color: $primary;
+            &:after {
+                background: $primary-hover;
+            }
+            &:hover {
+                color: $primary-hover;
+            }
+        }
+    }
+
+}
