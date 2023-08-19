@@ -27,6 +27,16 @@
             }
         }
     }
+    .work-highlight .desc .route {
+        .arrow {
+            background: $background;
+
+            &:after {
+                border-right-color: $background;
+                border-top-color: $background;
+            }
+        }
+    }
     .services {
         background: rgba($foreground, 0.2);
         ul {

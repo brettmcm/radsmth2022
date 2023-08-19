@@ -16,6 +16,12 @@
       border-right-color: #eff3f5;
       border-top-color: #eff3f5; }
 
+  .work-highlight .desc .route .arrow {
+    background: #eff3f5; }
+    .work-highlight .desc .route .arrow:after {
+      border-right-color: #eff3f5;
+      border-top-color: #eff3f5; }
+
   .services {
     background: rgba(51, 51, 51, 0.2); }
     .services ul li h3 svg {

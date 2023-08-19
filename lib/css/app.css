@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -160,22 +162,157 @@
   100% {
     opacity: 0.1; } }
 
+/**
+ * @license
+ *
+ * Font Family: Sentient
+ * Designed by: Noopur Choksi
+ * URL: https://www.fontshare.com/fonts/sentient
+ * Â© 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Sentient Variable(Variable font)
+ * Sentient Variable Italic(Variable font)
+ * Sentient Extralight
+ * Sentient Extralight Italic
+ * Sentient Light
+ * Sentient Light Italic
+ * Sentient Regular
+ * Sentient Italic
+ * Sentient Medium
+ * Sentient Medium Italic
+ * Sentient Bold
+ * Sentient Bold Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0 'wght' 400.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+@font-face {
+  font-family: 'Sentient-Variable';
+  src: url("../fonts/Sentient-Variable.woff2") format("woff2"), url("../fonts/Sentient-Variable.woff") format("woff"), url("../fonts/Sentient-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal; }
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0 'wght' 400.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+@font-face {
+  font-family: 'Sentient-VariableItalic';
+  src: url("../fonts/Sentient-VariableItalic.woff2") format("woff2"), url("../fonts/Sentient-VariableItalic.woff") format("woff"), url("../fonts/Sentient-VariableItalic.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Sentient-Extralight';
+  src: url("../fonts/Sentient-Extralight.woff2") format("woff2"), url("../fonts/Sentient-Extralight.woff") format("woff"), url("../fonts/Sentient-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient-ExtralightItalic';
+  src: url("../fonts/Sentient-ExtralightItalic.woff2") format("woff2"), url("../fonts/Sentient-ExtralightItalic.woff") format("woff"), url("../fonts/Sentient-ExtralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Sentient-Light';
+  src: url("../fonts/Sentient-Light.woff2") format("woff2"), url("../fonts/Sentient-Light.woff") format("woff"), url("../fonts/Sentient-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient-LightItalic';
+  src: url("../fonts/Sentient-LightItalic.woff2") format("woff2"), url("../fonts/Sentient-LightItalic.woff") format("woff"), url("../fonts/Sentient-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Sentient-Regular';
+  src: url("../fonts/Sentient-Regular.woff2") format("woff2"), url("../fonts/Sentient-Regular.woff") format("woff"), url("../fonts/Sentient-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient-Italic';
+  src: url("../fonts/Sentient-Italic.woff2") format("woff2"), url("../fonts/Sentient-Italic.woff") format("woff"), url("../fonts/Sentient-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Sentient-Medium';
+  src: url("../fonts/Sentient-Medium.woff2") format("woff2"), url("../fonts/Sentient-Medium.woff") format("woff"), url("../fonts/Sentient-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient-MediumItalic';
+  src: url("../fonts/Sentient-MediumItalic.woff2") format("woff2"), url("../fonts/Sentient-MediumItalic.woff") format("woff"), url("../fonts/Sentient-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Sentient-Bold';
+  src: url("../fonts/Sentient-Bold.woff2") format("woff2"), url("../fonts/Sentient-Bold.woff") format("woff"), url("../fonts/Sentient-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentient-BoldItalic';
+  src: url("../fonts/Sentient-BoldItalic.woff2") format("woff2"), url("../fonts/Sentient-BoldItalic.woff") format("woff"), url("../fonts/Sentient-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic; }
+
 body {
-  font-family: aktiv-grotesk, helvetica, arial, sans-serif;
+  font-family: 'Sentient-Light', serif;
   font-weight: 300;
   font-style: normal;
-  font-size: clamp(18px, 3vw, 24px); }
+  font-size: clamp(12px, 3vw, 24px); }
 
 h1 {
-  font-size: 3em;
+  font-family: 'Shrikhand', cursive;
+  font-size: 4em;
   line-height: 1.1em;
   letter-spacing: -0.04em;
   font-weight: 700;
   margin: 0;
-  max-width: 1440px; }
+  width: 80vw;
+  max-width: 1400px; }
 
 h2 {
-  font-size: 2em;
+  font-family: 'Shrikhand', cursive;
+  font-size: 4em;
+  line-height: 1.1em;
   letter-spacing: -0.03em;
   font-weight: 700;
   margin: 0;
@@ -191,14 +328,15 @@ h4 {
   font-size: 1em;
   letter-spacing: -0.02em;
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  opacity: 0.85; }
 
 span.dim {
   opacity: 0.6; }
 
 h1 .eyebrow, h2 .eyebrow {
   display: block;
-  font-size: 0.5em;
+  font-size: 0.4em;
   letter-spacing: -0.04em;
   line-height: 1em;
   color: #ff5757; }
@@ -228,7 +366,6 @@ p {
 a {
   text-decoration: none;
   transition: color 0.08s;
-  white-space: nowrap;
   color: inherit; }
   a.invert {
     color: #333333; }
@@ -304,7 +441,7 @@ body {
   padding: 0; }
 
 img {
-  border-radius: 2px; }
+  border-radius: 4px; }
 
 .tags {
   display: inline;
@@ -364,7 +501,6 @@ img {
 main {
   position: relative;
   box-sizing: border-box;
-  padding: 8em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,10 +529,16 @@ main {
       width: 100%;
       max-width: none; }
     main section.intro {
-      align-items: flex-start;
-      margin: 2vw 0 calc(2rem + 5vw) 0; }
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      height: 40vh; }
+      main section.intro h1 {
+        text-align: center; }
       main section.intro .tags {
         margin: 1em 0; }
+      main section.intro.hero {
+        height: 90vh; }
     main section.aside {
       justify-content: space-between;
       margin: 5vw 0; }
@@ -499,14 +641,12 @@ header {
       background: #eff3f5;
       opacity: var(--header-opacity); }
   header .logo {
-    font-family: helvetica, arial, sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-transform: uppercase;
     font-size: 2rem;
     z-index: 1000;
     pointer-events: all;
-    letter-spacing: -0.1em;
+    letter-spacing: -0.05em;
     transition: color 0.2s cubic-bezier(0.8, 0, 0.2, 1); }
     header .logo.active {
       color: #eff3f5;
@@ -668,35 +808,74 @@ footer {
   transform: rotate(45deg);
   background: blue; }
 
-section.work-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
-  padding: 0 1.5rem; }
-  section.work-grid .work-highlight {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; }
-    section.work-grid .work-highlight a {
-      display: inline-block; }
-    section.work-grid .work-highlight img.cover {
-      width: 100%;
-      transition: transform 1s, box-shadow 1s, filter 1s;
-      margin: 0;
-      aspect-ratio: 1.5;
-      object-fit: cover; }
-    section.work-grid .work-highlight h3, section.work-grid .work-highlight main section.aside aside, main section.aside section.work-grid .work-highlight aside {
-      transition: transform 1s; }
-    section.work-grid .work-highlight:hover img.cover {
-      transform: scale(1.01) translateY(0px);
-      filter: contrast(0.8);
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1), 0 15px 15px rgba(0, 0, 0, 0.1), 0 25px 25px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(0, 0, 0, 0.1); }
-    section.work-grid .work-highlight:hover h3, section.work-grid .work-highlight:hover main section.aside aside, main section.aside section.work-grid .work-highlight:hover aside {
-      transform: translateY(4px); }
+.work-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+  margin-bottom: 15vw; }
+  .work-highlight .cover {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    pointer-events: none; }
+  .work-highlight .desc {
+    width: 100%;
+    margin: 5vw 0;
+    pointer-events: none; }
+    .work-highlight .desc .subtitle {
+      margin-bottom: 2rem; }
+    .work-highlight .desc .route {
+      display: inline;
+      position: relative;
+      font-weight: 400;
+      color: #ff5757; }
+      .work-highlight .desc .route .arrow {
+        position: absolute;
+        top: 50%;
+        right: -1.5em;
+        width: 1em;
+        height: 2px;
+        background: #333333;
+        transition: opacity 0.3s cubic-bezier(0.8, 0, 0.2, 1), width 0.3s cubic-bezier(0.8, 0, 0.2, 1); }
+        .work-highlight .desc .route .arrow:after {
+          position: absolute;
+          content: '';
+          top: -0.2em;
+          right: 1px;
+          width: 0.4em;
+          height: 0.4em;
+          border-right: 2px solid #333333;
+          border-top: 2px solid #333333;
+          transform: rotate(45deg); }
+      .work-highlight .desc .route:after {
+        position: absolute;
+        content: '';
+        bottom: -0.2em;
+        left: 0;
+        width: 0;
+        height: 0.05em;
+        background: #ff7171;
+        transition: width 0.3s cubic-bezier(0.8, 0, 0.2, 1); }
+  .work-highlight:hover .route {
+    color: #ff7171; }
+    .work-highlight:hover .route .arrow {
+      opacity: 0;
+      width: 0; }
+    .work-highlight:hover .route:after {
+      width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .work-highlight {
+      flex-direction: row; }
+      .work-highlight .cover {
+        width: 60%; }
+      .work-highlight .desc {
+        width: 30%; }
+      .work-highlight:nth-child(odd) {
+        flex-direction: row-reverse; } }
 
-@media only screen and (min-width: 1000px) {
-  section.work-grid {
-    grid-template-columns: repeat(2, 1fr); } }
 body.islanddwell {
   color: #11c48e; }
 

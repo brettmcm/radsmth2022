@@ -1,24 +1,31 @@
+@import 'sentient';
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body {
-    font-family: aktiv-grotesk, helvetica, arial, sans-serif;
+    font-family: 'Sentient-Light', serif;
     font-weight: 300;
     font-style: normal;
-    font-size:#{"clamp(18px, 3vw, 24px)"}
+    font-size:#{"clamp(12px, 3vw, 24px)"}
 }
 h1 {
-    font-size: 3em;
+    font-family:  'Shrikhand', cursive;
+    font-size: 4em;
     line-height: 1.1em;
     letter-spacing: -0.04em;
     font-weight: 700;
     margin: 0;
-    max-width: 1440px;
+    width: 80vw;
+    max-width: 1400px;
 }
 
 h2 {
-    font-size: 2em;
+    font-family:  'Shrikhand', cursive;
+    font-size: 4em;
+    line-height: 1.1em;
     letter-spacing: -0.03em;
     font-weight: 700;
-    margin: 0;max-width: 1440px;
+    margin: 0;
+    max-width: 1440px;
 }
 
 h3 {
@@ -33,6 +40,7 @@ h4 {
     letter-spacing: -0.02em;
     font-weight: 700;
     margin: 0;
+    opacity: 0.85;
 }
 
 span.dim {
@@ -42,14 +50,10 @@ span.dim {
 h1, h2 {
     .eyebrow {
         display: block;
-        font-size:0.5em;
+        font-size:0.4em;
         letter-spacing: -0.04em;
         line-height: 1em;
         color: $primary;
-        // background: -webkit-linear-gradient(bottom right, $primary, $primary-gradient);
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
     }
     .gradient {
         background: -webkit-linear-gradient(bottom right, $primary-grad1, $primary-grad2);
@@ -86,7 +90,6 @@ p {
 a {
     text-decoration: none;
     transition: color 0.08s;
-    white-space: nowrap;
     color: inherit;
     &.invert {
         color: $foreground;
