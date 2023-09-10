@@ -108,10 +108,20 @@ main {
         }
         &.intro {
             align-items: center;
-            justify-content: flex-start;
+            justify-content: flex-end;
             padding-top: 20vh;
             box-sizing: border-box;
             height: 40vh;
+            color: $white;
+
+            padding-bottom: 2em;
+            font-size: 0.9rem;
+
+            .scroller {
+                position: fixed;
+                opacity: 0.5;
+            }
+
             h1 {
                 text-align: center;
             }
@@ -240,6 +250,14 @@ main {
         }
         ul {
             flex-direction: row;
+        }
+    }
+}
+
+@media (hover: none) {
+    main {
+        section.intro.hero {
+            background-attachment: none;
         }
     }
 }

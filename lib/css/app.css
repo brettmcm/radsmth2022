@@ -528,10 +528,16 @@ main {
       max-width: none; }
     main section.intro {
       align-items: center;
-      justify-content: flex-start;
+      justify-content: flex-end;
       padding-top: 20vh;
       box-sizing: border-box;
-      height: 40vh; }
+      height: 40vh;
+      color: #eff3f5;
+      padding-bottom: 2em;
+      font-size: 0.9rem; }
+      main section.intro .scroller {
+        position: fixed;
+        opacity: 0.5; }
       main section.intro h1 {
         text-align: center; }
       main section.intro .tags {
@@ -619,6 +625,9 @@ main {
         width: 100%; }
   main ul {
     flex-direction: row; } }
+@media (hover: none) {
+  main section.intro.hero {
+    background-attachment: none; } }
 header {
   position: fixed;
   display: flex;
