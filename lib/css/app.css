@@ -511,7 +511,7 @@ main {
   -ms-animation: fadeIn ease 0.7s;
   animation-fill-mode: forwards; }
   main.mid-tight {
-    padding-top: 20vh; }
+    padding-top: calc(3rem + 15vh); }
   main.tight {
     padding-top: 0; }
   main section {
