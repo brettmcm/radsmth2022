@@ -35,7 +35,7 @@ header {
         font-size:2rem;
         z-index: 1000;
         pointer-events: all;
-        letter-spacing: -0.05em;
+        letter-spacing: -0.03em;
         transition: color 0.2s cubic-bezier(.8,0,.2,1);
         &.active {
             color: $background;

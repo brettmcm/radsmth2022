@@ -7,7 +7,7 @@
     position: relative;
     width: calc(20% - 4px);
     background: white;
-    border: 2px solid rgba(51, 51, 51, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     margin: 0; }
     #work-list .project img, #work-list .ui-sortable-placeholder img {
@@ -16,7 +16,7 @@
       pointer-events: none;
       margin: 0; }
     #work-list .project:hover, #work-list .ui-sortable-placeholder:hover {
-      border-color: #333333;
+      border-color: black;
       cursor: grab; }
     #work-list .project:active, #work-list .ui-sortable-placeholder:active {
       border-color: #ff5757;

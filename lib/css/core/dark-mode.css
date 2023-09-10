@@ -1,9 +1,9 @@
 @media screen and (prefers-color-scheme: dark) {
   body, header {
-    background: #111111;
+    background: black;
     color: #eff3f5; }
     body.transparent:after, header.transparent:after {
-      background: #111111; }
+      background: black; }
 
   header .hamburger div {
     background: #eff3f5; }
@@ -23,7 +23,7 @@
       border-top-color: #eff3f5; }
 
   .services {
-    background: rgba(51, 51, 51, 0.2); }
+    background: rgba(0, 0, 0, 0.2); }
     .services ul li h3 svg {
       fill: #eff3f5; }
 

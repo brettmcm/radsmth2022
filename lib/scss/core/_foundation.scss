@@ -108,7 +108,8 @@ main {
         }
         &.intro {
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            padding-top: 20vh;
             box-sizing: border-box;
             height: 40vh;
             h1 {
@@ -118,8 +119,13 @@ main {
                 margin: 1em 0;
             }
             &.hero {
-                height: 90vh;
+                height: 100vh;
+                margin-bottom: 3rem;
+                background: url('/lib/img/hero-fg.png') bottom center;
+                background-size: cover;
+                background-attachment: fixed;
             }
+
         }
         &.aside {
             justify-content: space-between;

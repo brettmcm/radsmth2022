@@ -44,7 +44,7 @@
 .services {
   display: flex;
   align-items: center;
-  background: rgba(51, 51, 51, 0.04);
+  background: rgba(0, 0, 0, 0.04);
   padding: 10vw 5vw; }
   .services h2 {
     width: 100%; }
@@ -65,7 +65,7 @@
         .services ul li h3 svg {
           width: calc(2em + 1vw);
           margin: 0 0 1em -10px;
-          fill: #333333; }
+          fill: black; }
 
 @media only screen and (min-width: 1000px) {
   .services ul {

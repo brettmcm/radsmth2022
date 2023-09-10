@@ -294,14 +294,13 @@
   font-style: italic; }
 
 body {
-  font-family: 'Sentient-Light', serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: clamp(12px, 3vw, 24px); }
 
 h1 {
-  font-family: 'Shrikhand', cursive;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.1em;
   letter-spacing: -0.04em;
   font-weight: 700;
@@ -310,7 +309,6 @@ h1 {
   max-width: 1400px; }
 
 h2 {
-  font-family: 'Shrikhand', cursive;
   font-size: 4em;
   line-height: 1.1em;
   letter-spacing: -0.03em;
@@ -368,7 +366,7 @@ a {
   transition: color 0.08s;
   color: inherit; }
   a.invert {
-    color: #333333; }
+    color: black; }
     a.invert:hover {
       color: #ff7171; }
   a.inline {
@@ -384,7 +382,7 @@ a {
       right: -1.5em;
       width: 1em;
       height: 2px;
-      background: #333333;
+      background: black;
       transition: opacity 0.3s cubic-bezier(0.8, 0, 0.2, 1), width 0.3s cubic-bezier(0.8, 0, 0.2, 1); }
       a.route .arrow:after {
         position: absolute;
@@ -393,8 +391,8 @@ a {
         right: 1px;
         width: 0.4em;
         height: 0.4em;
-        border-right: 2px solid #333333;
-        border-top: 2px solid #333333;
+        border-right: 2px solid black;
+        border-top: 2px solid black;
         transform: rotate(45deg); }
     a.route:after {
       position: absolute;
@@ -435,7 +433,7 @@ html, body {
     overflow-y: hidden; }
 
 body {
-  color: #333333;
+  color: black;
   background: #eff3f5;
   margin: 0;
   padding: 0; }
@@ -530,7 +528,8 @@ main {
       max-width: none; }
     main section.intro {
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-top: 20vh;
       box-sizing: border-box;
       height: 40vh; }
       main section.intro h1 {
@@ -538,7 +537,11 @@ main {
       main section.intro .tags {
         margin: 1em 0; }
       main section.intro.hero {
-        height: 90vh; }
+        height: 100vh;
+        margin-bottom: 3rem;
+        background: url("/lib/img/hero-fg.png") bottom center;
+        background-size: cover;
+        background-attachment: fixed; }
     main section.aside {
       justify-content: space-between;
       margin: 5vw 0; }
@@ -573,7 +576,7 @@ main {
     font-family: chaparral-pro, serif;
     font-style: italic;
     margin: 5vw 0;
-    background: rgba(51, 51, 51, 0.04);
+    background: rgba(0, 0, 0, 0.04);
     padding: 6rem; }
     main blockquote .source {
       font-family: aktiv-grotesk, helvetica, arial, sans-serif;
@@ -583,7 +586,7 @@ main {
       font-style: normal; }
     @media screen and (prefers-color-scheme: dark) {
       main blockquote {
-        background: rgba(51, 51, 51, 0.2); } }
+        background: rgba(0, 0, 0, 0.2); } }
   main ul {
     display: flex;
     flex-direction: column;
@@ -646,7 +649,7 @@ header {
     font-size: 2rem;
     z-index: 1000;
     pointer-events: all;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     transition: color 0.2s cubic-bezier(0.8, 0, 0.2, 1); }
     header .logo.active {
       color: #eff3f5;
@@ -661,7 +664,7 @@ header {
     z-index: 1000;
     pointer-events: all; }
     header .hamburger div {
-      background: #333333;
+      background: black;
       height: 15%;
       border-radius: 1px;
       transition: transform 0.4s cubic-bezier(0.8, 0, 0.2, 1), background 0.4s cubic-bezier(0.8, 0, 0.2, 1); }
@@ -779,7 +782,8 @@ footer {
   width: 100vw;
   pointer-events: none;
   z-index: 999;
-  font-size: 1.25rem; }
+  font-size: 1rem;
+  font-weight: 700; }
   footer .social {
     pointer-events: all; }
 
@@ -838,7 +842,7 @@ footer {
         right: -1.5em;
         width: 1em;
         height: 2px;
-        background: #333333;
+        background: black;
         transition: opacity 0.3s cubic-bezier(0.8, 0, 0.2, 1), width 0.3s cubic-bezier(0.8, 0, 0.2, 1); }
         .work-highlight .desc .route .arrow:after {
           position: absolute;
@@ -847,8 +851,8 @@ footer {
           right: 1px;
           width: 0.4em;
           height: 0.4em;
-          border-right: 2px solid #333333;
-          border-top: 2px solid #333333;
+          border-right: 2px solid black;
+          border-top: 2px solid black;
           transform: rotate(45deg); }
       .work-highlight .desc .route:after {
         position: absolute;

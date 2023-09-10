@@ -1,6 +1,6 @@
 $background: #eff3f5;
-$foreground: #333;
-$black: #111;
+$foreground: #000;
+$black: #000;
 
 $border-radius: 4px;
 $border-radius-big: calc(4px + 2vw);
@@ -13,6 +13,5 @@ $primary-grad2: #ff7259;
 
 $secondary: adjust-hue( $primary, 220% );
 $tertiary: adjust-hue( darken( $primary, 25% ), 160% ) ;
-
 
 $black-gradient: #222;

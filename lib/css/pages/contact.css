@@ -11,7 +11,7 @@ section {
       line-height: 3em;
       padding: 0 1.25em 0.15em 1.25em;
       border-radius: 4vw;
-      background: rgba(51, 51, 51, 0.05);
+      background: rgba(0, 0, 0, 0.05);
       opacity: 0;
       transform: translateY(0.5em);
       animation: messageIn ease 0.7s;
