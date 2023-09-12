@@ -529,7 +529,6 @@ main {
     main section.intro {
       align-items: center;
       justify-content: flex-end;
-      padding-top: 20vh;
       box-sizing: border-box;
       height: 40vh;
       color: #eff3f5;
@@ -544,10 +543,17 @@ main {
         margin: 1em 0; }
       main section.intro.hero {
         height: 100vh;
-        margin-bottom: 3rem;
-        background: url("/lib/img/hero-fg.png") bottom center;
-        background-size: cover;
-        background-attachment: fixed; }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: vh; }
+        main section.intro.hero .logo-cycle {
+          width: 100%;
+          max-height: 60vh;
+          max-width: 60vh;
+          aspect-ratio: 1;
+          background-image: url(../img/logo-cycle-dark.gif);
+          background-size: contain; }
     main section.aside {
       justify-content: space-between;
       margin: 5vw 0; }
@@ -625,10 +631,6 @@ main {
         width: 100%; }
   main ul {
     flex-direction: row; } }
-@media (hover: none) {
-  main section.hero {
-    background: red;
-    background-attachment: scroll; } }
 header {
   position: fixed;
   display: flex;

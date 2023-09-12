@@ -27,6 +27,20 @@
             }
         }
     }
+
+    
+    main {
+        section {
+            &.intro {
+                &.hero {
+                    .logo-cycle {
+                        background-image: url(../img/logo-cycle-dark.gif);
+                    }
+                }
+            }
+        }
+    }
+
     .work-highlight .desc .route {
         .arrow {
             background: $background;

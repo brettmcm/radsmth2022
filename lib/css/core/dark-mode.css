@@ -16,6 +16,9 @@
       border-right-color: #eff3f5;
       border-top-color: #eff3f5; }
 
+  main section.intro.hero .logo-cycle {
+    background-image: url(../img/logo-cycle-dark.gif); }
+
   .work-highlight .desc .route .arrow {
     background: #eff3f5; }
     .work-highlight .desc .route .arrow:after {
