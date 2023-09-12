@@ -627,6 +627,7 @@ main {
     flex-direction: row; } }
 @media (hover: none) {
   main section.hero {
+    background: red;
     background-attachment: scroll; } }
 header {
   position: fixed;
