@@ -256,8 +256,8 @@ main {
 
 @media (hover: none) {
     main {
-        section.intro.hero {
-            background-attachment: none;
+        section.hero {
+            background-attachment: scroll;
         }
     }
 }

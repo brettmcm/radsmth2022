@@ -626,8 +626,8 @@ main {
   main ul {
     flex-direction: row; } }
 @media (hover: none) {
-  main section.intro.hero {
-    background-attachment: none; } }
+  main section.hero {
+    background-attachment: scroll; } }
 header {
   position: fixed;
   display: flex;
